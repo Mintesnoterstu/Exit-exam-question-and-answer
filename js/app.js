@@ -21,6 +21,7 @@ async function init() {
     courseMap = getCourseMap();
     applyTheme(Storage.getTheme());
     bindNavigation();
+    bindMobileNav();
     bindThemeToggle();
     renderDashboard();
     buildFilterUI();
@@ -54,16 +55,75 @@ function bindThemeToggle() {
 
 function bindNavigation() {
   document.querySelectorAll(".nav-btn").forEach((btn) => {
-    btn.addEventListener("click", () => showView(btn.dataset.view));
+    btn.addEventListener("click", () => {
+      closeMobileMenu();
+      showView(btn.dataset.view);
+    });
   });
+}
+
+function bindMobileNav() {
+  document.querySelectorAll(".bottom-nav-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const view = btn.dataset.view;
+      if (view === "more") {
+        openMobileMenu();
+        return;
+      }
+      closeMobileMenu();
+      showView(view);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
+  document.getElementById("menu-toggle")?.addEventListener("click", () => {
+    const menu = document.getElementById("mobile-menu");
+    if (menu?.hidden) openMobileMenu();
+    else closeMobileMenu();
+  });
+
+  document.querySelectorAll("[data-close-menu]").forEach((el) => {
+    el.addEventListener("click", closeMobileMenu);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMobileMenu();
+  });
+}
+
+function openMobileMenu() {
+  const menu = document.getElementById("mobile-menu");
+  const toggle = document.getElementById("menu-toggle");
+  if (!menu) return;
+  menu.hidden = false;
+  document.body.classList.add("menu-open");
+  toggle?.setAttribute("aria-expanded", "true");
+}
+
+function closeMobileMenu() {
+  const menu = document.getElementById("mobile-menu");
+  const toggle = document.getElementById("menu-toggle");
+  if (!menu) return;
+  menu.hidden = true;
+  document.body.classList.remove("menu-open");
+  toggle?.setAttribute("aria-expanded", "false");
 }
 
 function showView(name) {
   document.querySelectorAll(".nav-btn").forEach((b) => b.classList.toggle("active", b.dataset.view === name));
+  document.querySelectorAll(".bottom-nav-btn").forEach((b) => {
+    const v = b.dataset.view;
+    if (v === "more") {
+      b.classList.toggle("active", name === "analytics" || name === "browse");
+    } else {
+      b.classList.toggle("active", v === name);
+    }
+  });
   document.querySelectorAll(".view").forEach((v) => v.classList.toggle("active", v.id === `view-${name}`));
   if (name === "analytics") renderAnalytics();
   if (name === "review") renderReview("wrong");
   if (name === "dashboard") renderDashboard();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function renderDashboard() {

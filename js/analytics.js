@@ -14,6 +14,8 @@ function chartOptions() {
   const dark = document.documentElement.dataset.theme === "dark";
   return {
     responsive: true,
+    maintainAspectRatio: true,
+    aspectRatio: window.innerWidth < 480 ? 1.2 : 2,
     plugins: { legend: { labels: { color: dark ? "#e8edf5" : "#1a2234" } } },
     scales: {
       x: { ticks: { color: dark ? "#94a3b8" : "#5c6b82" }, grid: { color: dark ? "#334155" : "#e2e8f0" } },
@@ -105,7 +107,12 @@ function renderDifficultyChart(progress) {
         },
       ],
     },
-    options: { responsive: true, plugins: { legend: { position: "bottom" } } },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      aspectRatio: window.innerWidth < 480 ? 1.1 : 1.8,
+      plugins: { legend: { position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } } },
+    },
   });
 }
 
@@ -121,7 +128,12 @@ export function renderDashboardCharts(progress, totalQuestions) {
       labels: ["Attempted", "Remaining"],
       datasets: [{ data: [seen, Math.max(0, totalQuestions - seen)], backgroundColor: ["#2563eb", "#e2e8f0"] }],
     },
-    options: { responsive: true, plugins: { legend: { position: "bottom" } } },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      aspectRatio: window.innerWidth < 480 ? 1.1 : 1.5,
+      plugins: { legend: { position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } } },
+    },
   });
 }
 

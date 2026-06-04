@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5"
+    />
+    <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a2332" media="(prefers-color-scheme: dark)" />
     <meta
       name="description"
       content="Ethiopian Ministry of Education Computer Science National Exit Exam preparation — 1,000 blueprint-aligned MCQs."
@@ -25,29 +30,73 @@
     </div>
 
     <header class="site-header">
-      <div class="brand">
-        <span class="brand-icon" aria-hidden="true">🎓</span>
-        <div>
-          <h1>CS Exit Exam Prep</h1>
-          <p class="brand-sub">MoE Blueprint · 1,000 MCQs</p>
+      <div class="header-top">
+        <div class="brand">
+          <span class="brand-icon" aria-hidden="true">🎓</span>
+          <div class="brand-text">
+            <h1>CS Exit Exam Prep</h1>
+            <p class="brand-sub">MoE Blueprint · 1,000 MCQs</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button
+            id="menu-toggle"
+            class="icon-btn menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <span class="menu-icon" aria-hidden="true">☰</span>
+          </button>
+          <button id="theme-toggle" class="icon-btn" type="button" title="Toggle dark/light mode" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
         </div>
       </div>
-      <nav class="main-nav" aria-label="Main">
-        <button class="nav-btn active" data-view="dashboard">Dashboard</button>
-        <button class="nav-btn" data-view="practice">Practice</button>
-        <button class="nav-btn" data-view="mock">Mock Exam</button>
-        <button class="nav-btn" data-view="review">Review</button>
-        <button class="nav-btn" data-view="analytics">Analytics</button>
-        <button class="nav-btn" data-view="browse">Browse</button>
+      <nav class="main-nav desktop-nav" aria-label="Main navigation">
+        <button class="nav-btn active" type="button" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" type="button" data-view="practice">Practice</button>
+        <button class="nav-btn" type="button" data-view="mock">Mock Exam</button>
+        <button class="nav-btn" type="button" data-view="review">Review</button>
+        <button class="nav-btn" type="button" data-view="analytics">Analytics</button>
+        <button class="nav-btn" type="button" data-view="browse">Browse</button>
       </nav>
-      <div class="header-actions">
-        <button id="theme-toggle" class="icon-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
-          <span class="theme-icon">🌙</span>
-        </button>
-      </div>
     </header>
 
-    <main class="main-content">
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+      <button class="bottom-nav-btn active" type="button" data-view="dashboard">
+        <span class="bottom-nav-icon" aria-hidden="true">🏠</span>
+        <span class="bottom-nav-label">Home</span>
+      </button>
+      <button class="bottom-nav-btn" type="button" data-view="practice">
+        <span class="bottom-nav-icon" aria-hidden="true">📖</span>
+        <span class="bottom-nav-label">Practice</span>
+      </button>
+      <button class="bottom-nav-btn" type="button" data-view="mock">
+        <span class="bottom-nav-icon" aria-hidden="true">⏱️</span>
+        <span class="bottom-nav-label">Mock</span>
+      </button>
+      <button class="bottom-nav-btn" type="button" data-view="review">
+        <span class="bottom-nav-icon" aria-hidden="true">🔄</span>
+        <span class="bottom-nav-label">Review</span>
+      </button>
+      <button class="bottom-nav-btn" type="button" data-view="more" id="bottom-nav-more">
+        <span class="bottom-nav-icon" aria-hidden="true">⋯</span>
+        <span class="bottom-nav-label">More</span>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="mobile-menu-backdrop" data-close-menu></div>
+      <div class="mobile-menu-panel" role="dialog" aria-label="More options">
+        <h2 class="mobile-menu-title">More</h2>
+        <button class="mobile-menu-item nav-btn" type="button" data-view="analytics">📊 Analytics</button>
+        <button class="mobile-menu-item nav-btn" type="button" data-view="browse">🔍 Browse Questions</button>
+      </div>
+    </div>
+
+    <main class="main-content" id="main-content">
       <!-- Dashboard -->
       <section id="view-dashboard" class="view active">
         <div class="hero card animate-in">
