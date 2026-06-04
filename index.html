@@ -1,9 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Ethiopian Ministry of Education Computer Science National Exit Exam preparation — 1,000 blueprint-aligned MCQs."
+    />
+    <title>CS National Exit Exam Prep | MoE Blueprint</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="app-loader" class="loader" aria-live="polite">
+      <div class="loader-card">
+        <div class="loader-ring"></div>
+        <p>Loading question bank…</p>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">🎓</span>
+        <div>
+          <h1>CS Exit Exam Prep</h1>
+          <p class="brand-sub">MoE Blueprint · 1,000 MCQs</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main">
+        <button class="nav-btn active" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" data-view="practice">Practice</button>
+        <button class="nav-btn" data-view="mock">Mock Exam</button>
+        <button class="nav-btn" data-view="review">Review</button>
+        <button class="nav-btn" data-view="analytics">Analytics</button>
+        <button class="nav-btn" data-view="browse">Browse</button>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Dashboard -->
+      <section id="view-dashboard" class="view active">
+        <div class="hero card animate-in">
+          <h2>Prepare for the Ethiopian CS National Exit Exam</h2>
+          <p>
+            Questions are organized by MoE theme, course, chapter, difficulty, and cognitive level — aligned with the
+            official test blueprint (100 items · 120 minutes).
+          </p>
+          <div class="hero-stats" id="dashboard-stats"></div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-quick="practice">Start Practice</button>
+            <button class="btn btn-secondary" data-quick="mock">Timed Mock (100 Q)</button>
+            <button class="btn btn-ghost" data-quick="random">Random Quiz (20 Q)</button>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card animate-in delay-1">
+            <h3>Blueprint Themes</h3>
+            <div id="theme-bars" class="theme-bars"></div>
+          </div>
+          <div class="card animate-in delay-2">
+            <h3>Your Progress</h3>
+            <canvas id="progress-chart" height="200" aria-label="Progress chart"></canvas>
+          </div>
+        </div>
+        <div class="card animate-in delay-3">
+          <h3>Weak Areas</h3>
+          <p class="muted">Based on questions you answered incorrectly.</p>
+          <div id="weak-areas" class="weak-list"></div>
+        </div>
+      </section>
+
+      <!-- Practice -->
+      <section id="view-practice" class="view">
+        <div class="filters card" id="practice-filters"></div>
+        <div id="quiz-container" class="quiz-area hidden"></div>
+        <div id="practice-empty" class="empty-state card">
+          <p>Configure filters and start a practice session.</p>
+          <button class="btn btn-primary" id="start-practice">Start Practice Session</button>
+        </div>
+      </section>
+
+      <!-- Mock Exam -->
+      <section id="view-mock" class="view">
+        <div class="card mock-intro">
+          <h2>Full Mock Examination</h2>
+          <ul>
+            <li><strong>100 questions</strong> sampled by blueprint weights</li>
+            <li><strong>120 minutes</strong> countdown timer</li>
+            <li>No explanations until you submit</li>
+          </ul>
+          <button class="btn btn-primary btn-lg" id="start-mock">Begin Mock Exam</button>
+        </div>
+        <div id="mock-quiz" class="quiz-area hidden"></div>
+      </section>
+
+      <!-- Review -->
+      <section id="view-review" class="view">
+        <div class="card">
+          <h2>Review Mode</h2>
+          <p class="muted">Revisit incorrect answers, bookmarks, and favorites.</p>
+          <div class="review-tabs">
+            <button class="tab active" data-review="wrong">Incorrect</button>
+            <button class="tab" data-review="bookmarks">Bookmarks</button>
+            <button class="tab" data-review="favorites">Favorites</button>
+          </div>
+          <div id="review-list" class="review-list"></div>
+        </div>
+      </section>
+
+      <!-- Analytics -->
+      <section id="view-analytics" class="view">
+        <div class="grid-2">
+          <div class="card">
+            <h3>Score Over Time</h3>
+            <canvas id="score-chart" height="220"></canvas>
+          </div>
+          <div class="card">
+            <h3>Performance by Course</h3>
+            <canvas id="course-chart" height="220"></canvas>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Difficulty Breakdown</h3>
+          <canvas id="difficulty-chart" height="180"></canvas>
+        </div>
+      </section>
+
+      <!-- Browse -->
+      <section id="view-browse" class="view">
+        <div class="card">
+          <div class="search-row">
+            <input type="search" id="search-input" placeholder="Search questions…" aria-label="Search questions" />
+            <select id="filter-course" aria-label="Filter by course"><option value="">All courses</option></select>
+            <select id="filter-difficulty" aria-label="Filter by difficulty">
+              <option value="">All difficulties</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+            <select id="filter-cognitive" aria-label="Filter by cognitive level">
+              <option value="">All cognitive levels</option>
+              <option value="remember">Remember</option>
+              <option value="understand">Understand</option>
+              <option value="apply">Apply</option>
+              <option value="analyze">Analyze</option>
+              <option value="evaluate">Evaluate</option>
+              <option value="create">Create</option>
+            </select>
+          </div>
+          <div id="browse-results" class="browse-results"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Data stored locally in your browser · Based on MoE CS Test Blueprint</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,3006 @@
+{
+  "themeId": "compiler-complexity",
+  "count": 120,
+  "questions": [
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Automata",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "A DFA has:",
+      "options": {
+        "A": "Deterministic transitions for each state-symbol pair",
+        "B": "No states",
+        "C": "Only epsilon moves",
+        "D": "Unbounded stack always"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Exactly one next state per input symbol.",
+        "incorrect": {
+          "B": "States are required.",
+          "C": "Epsilon moves are NFA feature.",
+          "D": "Stack is PDA."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0881"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Languages",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Regular languages are recognized by:",
+      "options": {
+        "A": "Finite automata",
+        "B": "Only Turing machines exclusively",
+        "C": "HTML parsers only",
+        "D": "Spreadsheets"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "DFA/NFA/regex characterize regular languages.",
+        "incorrect": {
+          "B": "TMs recognize more than regular.",
+          "C": "Not parser-specific.",
+          "D": "Application software."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0882"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Complexity",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Class P contains problems solvable in:",
+      "options": {
+        "A": "Polynomial time",
+        "B": "Exponential time only",
+        "C": "Infinite time",
+        "D": "No time bound"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Polynomial time deterministic algorithms.",
+        "incorrect": {
+          "B": "Exponential may be harder.",
+          "C": "Must halt.",
+          "D": "Time bound defines class."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0883"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "NP",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "NP-complete problems are:",
+      "options": {
+        "A": "In NP and every NP problem reduces to them",
+        "B": "Always O(1)",
+        "C": "Only regular languages",
+        "D": "Unsolvable always"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Hardest problems in NP under polynomial reduction.",
+        "incorrect": {
+          "B": "Rarely constant time.",
+          "C": "More complex than regular.",
+          "D": "Decidable though hard."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0884"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #1: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 1",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 1."
+      },
+      "id": "Q0885"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #2: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 2",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 2."
+      },
+      "id": "Q0886"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #3: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 3",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 3."
+      },
+      "id": "Q0887"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #4: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 4",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 4."
+      },
+      "id": "Q0888"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #5: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 5",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 5."
+      },
+      "id": "Q0889"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #6: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 6",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 6."
+      },
+      "id": "Q0890"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #7: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 7",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 7."
+      },
+      "id": "Q0891"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #8: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 8",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 8."
+      },
+      "id": "Q0892"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #9: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 9",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 9."
+      },
+      "id": "Q0893"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #10: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 10",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 10."
+      },
+      "id": "Q0894"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #11: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 11",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 11."
+      },
+      "id": "Q0895"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #12: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 12",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 12."
+      },
+      "id": "Q0896"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #13: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 13",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 13."
+      },
+      "id": "Q0897"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #14: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 14",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 14."
+      },
+      "id": "Q0898"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #15: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 15",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 15."
+      },
+      "id": "Q0899"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #16: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 16",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 16."
+      },
+      "id": "Q0900"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #17: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 17",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 17."
+      },
+      "id": "Q0901"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #18: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 18",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 18."
+      },
+      "id": "Q0902"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #19: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 19",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 19."
+      },
+      "id": "Q0903"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #20: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 20",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 20."
+      },
+      "id": "Q0904"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #21: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 21",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 21."
+      },
+      "id": "Q0905"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #22: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 22",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 22."
+      },
+      "id": "Q0906"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #23: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 23",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 23."
+      },
+      "id": "Q0907"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #24: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 24",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 24."
+      },
+      "id": "Q0908"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #25: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 25",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 25."
+      },
+      "id": "Q0909"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #26: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 26",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 26."
+      },
+      "id": "Q0910"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #27: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 27",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 27."
+      },
+      "id": "Q0911"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #28: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 28",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 28."
+      },
+      "id": "Q0912"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #29: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 29",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 29."
+      },
+      "id": "Q0913"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #30: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 30",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 30."
+      },
+      "id": "Q0914"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #31: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 31",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 31."
+      },
+      "id": "Q0915"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #32: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 32",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 32."
+      },
+      "id": "Q0916"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #33: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 33",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 33."
+      },
+      "id": "Q0917"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #34: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 34",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 34."
+      },
+      "id": "Q0918"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #35: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 35",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 35."
+      },
+      "id": "Q0919"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #36: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 36",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 36."
+      },
+      "id": "Q0920"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #37: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 37",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 37."
+      },
+      "id": "Q0921"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #38: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 38",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 38."
+      },
+      "id": "Q0922"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #39: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 39",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 39."
+      },
+      "id": "Q0923"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #40: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 40",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 40."
+      },
+      "id": "Q0924"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #41: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 41",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 41."
+      },
+      "id": "Q0925"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #42: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 42",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 42."
+      },
+      "id": "Q0926"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #43: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 43",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 43."
+      },
+      "id": "Q0927"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #44: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 44",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 44."
+      },
+      "id": "Q0928"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Regular Expressions",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In regular expressions, concept #45: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for regular expressions case 45",
+        "B": "Common misconception about regular expressions",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for regular expressions.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review regular expressions section in your notes before mock exam 45."
+      },
+      "id": "Q0929"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Automata — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 50] According to your course notes, a DFA has:",
+      "options": {
+        "A": "Deterministic transitions for each state-symbol pair",
+        "B": "No states (variant 1).",
+        "C": "Only epsilon moves (variant 1).",
+        "D": "Unbounded stack always (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Exactly one next state per input symbol.",
+        "incorrect": {
+          "B": "States are required.",
+          "C": "Epsilon moves are NFA feature.",
+          "D": "Stack is PDA."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0930"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Automata — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 50] A DFA has:",
+      "options": {
+        "A": "Deterministic transitions for each state-symbol pair",
+        "B": "No states (variant 2).",
+        "C": "Only epsilon moves (variant 2).",
+        "D": "Unbounded stack always (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Exactly one next state per input symbol.",
+        "incorrect": {
+          "B": "States are required.",
+          "C": "Epsilon moves are NFA feature.",
+          "D": "Stack is PDA."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0931"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Automata — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 50] Which of the following best describes a DFA has:",
+      "options": {
+        "A": "Deterministic transitions for each state-symbol pair",
+        "B": "No states (variant 3).",
+        "C": "Only epsilon moves (variant 3).",
+        "D": "Unbounded stack always (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Exactly one next state per input symbol.",
+        "incorrect": {
+          "B": "States are required.",
+          "C": "Epsilon moves are NFA feature.",
+          "D": "Stack is PDA."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0932"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Languages — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 53] According to your course notes, regular languages are recognized by:",
+      "options": {
+        "A": "Finite automata",
+        "B": "Only Turing machines exclusively (variant 1).",
+        "C": "HTML parsers only (variant 1).",
+        "D": "Spreadsheets (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "DFA/NFA/regex characterize regular languages.",
+        "incorrect": {
+          "B": "TMs recognize more than regular.",
+          "C": "Not parser-specific.",
+          "D": "Application software."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0933"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Languages — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 53] Regular languages are recognized by:",
+      "options": {
+        "A": "Finite automata",
+        "B": "Only Turing machines exclusively (variant 2).",
+        "C": "HTML parsers only (variant 2).",
+        "D": "Spreadsheets (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "DFA/NFA/regex characterize regular languages.",
+        "incorrect": {
+          "B": "TMs recognize more than regular.",
+          "C": "Not parser-specific.",
+          "D": "Application software."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0934"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Languages — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 53] Which of the following best describes regular languages are recognized by:",
+      "options": {
+        "A": "Finite automata",
+        "B": "Only Turing machines exclusively (variant 3).",
+        "C": "HTML parsers only (variant 3).",
+        "D": "Spreadsheets (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "DFA/NFA/regex characterize regular languages.",
+        "incorrect": {
+          "B": "TMs recognize more than regular.",
+          "C": "Not parser-specific.",
+          "D": "Application software."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0935"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Complexity — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 56] According to your course notes, class P contains problems solvable in:",
+      "options": {
+        "A": "Polynomial time",
+        "B": "Exponential time only (variant 1).",
+        "C": "Infinite time (variant 1).",
+        "D": "No time bound (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Polynomial time deterministic algorithms.",
+        "incorrect": {
+          "B": "Exponential may be harder.",
+          "C": "Must halt.",
+          "D": "Time bound defines class."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0936"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Complexity — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 56] Class P contains problems solvable in:",
+      "options": {
+        "A": "Polynomial time",
+        "B": "Exponential time only (variant 2).",
+        "C": "Infinite time (variant 2).",
+        "D": "No time bound (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Polynomial time deterministic algorithms.",
+        "incorrect": {
+          "B": "Exponential may be harder.",
+          "C": "Must halt.",
+          "D": "Time bound defines class."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0937"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "Complexity — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 56] Which of the following best describes class P contains problems solvable in:",
+      "options": {
+        "A": "Polynomial time",
+        "B": "Exponential time only (variant 3).",
+        "C": "Infinite time (variant 3).",
+        "D": "No time bound (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Polynomial time deterministic algorithms.",
+        "incorrect": {
+          "B": "Exponential may be harder.",
+          "C": "Must halt.",
+          "D": "Time bound defines class."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0938"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "NP — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 59] According to your course notes, nP-complete problems are:",
+      "options": {
+        "A": "In NP and every NP problem reduces to them",
+        "B": "Always O(1) (variant 1).",
+        "C": "Only regular languages (variant 1).",
+        "D": "Unsolvable always (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Hardest problems in NP under polynomial reduction.",
+        "incorrect": {
+          "B": "Rarely constant time.",
+          "C": "More complex than regular.",
+          "D": "Decidable though hard."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0939"
+    },
+    {
+      "courseId": "automata-complexity",
+      "themeId": "compiler-complexity",
+      "chapter": "NP — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Automata Complexity · Item 59] NP-complete problems are:",
+      "options": {
+        "A": "In NP and every NP problem reduces to them",
+        "B": "Always O(1) (variant 2).",
+        "C": "Only regular languages (variant 2).",
+        "D": "Unsolvable always (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Hardest problems in NP under polynomial reduction.",
+        "incorrect": {
+          "B": "Rarely constant time.",
+          "C": "More complex than regular.",
+          "D": "Decidable though hard."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0940"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Phases",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Lexical analysis produces:",
+      "options": {
+        "A": "Tokens",
+        "B": "Machine code directly",
+        "C": "ER diagrams",
+        "D": "IP routes"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Scanner groups characters into token stream.",
+        "incorrect": {
+          "B": "Code generation is later phase.",
+          "C": "Database design.",
+          "D": "Networking."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0941"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Parsing",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "A syntax error is detected during:",
+      "options": {
+        "A": "Semantic analysis only",
+        "B": "Syntax (parser) analysis",
+        "C": "Code optimization in OS",
+        "D": "DHCP"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Parser checks grammar of token stream.",
+        "incorrect": {
+          "A": "Semantics checks meaning after syntax.",
+          "C": "Unrelated.",
+          "D": "Network admin."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0942"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Code Gen",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Intermediate representation (IR) helps compilers by:",
+      "options": {
+        "A": "Enabling machine-independent optimization",
+        "B": "Removing need for parsing",
+        "C": "Deleting source files",
+        "D": "Bypassing symbol table"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "IR separates front-end from back-end optimizations.",
+        "incorrect": {
+          "B": "Parsing still required.",
+          "C": "Source retained.",
+          "D": "Symbols still needed."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0943"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Optimization",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Constant folding is an example of:",
+      "options": {
+        "A": "Compile-time optimization",
+        "B": "Runtime DNS",
+        "C": "Deadlock recovery",
+        "D": "Normalization"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Evaluates constant expressions during compilation.",
+        "incorrect": {
+          "B": "Network.",
+          "C": "OS concept.",
+          "D": "Database."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0944"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #1: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 1",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 1."
+      },
+      "id": "Q0945"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #2: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 2",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 2."
+      },
+      "id": "Q0946"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #3: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 3",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 3."
+      },
+      "id": "Q0947"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #4: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 4",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 4."
+      },
+      "id": "Q0948"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #5: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 5",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 5."
+      },
+      "id": "Q0949"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #6: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 6",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 6."
+      },
+      "id": "Q0950"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #7: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 7",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 7."
+      },
+      "id": "Q0951"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #8: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 8",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 8."
+      },
+      "id": "Q0952"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #9: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 9",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 9."
+      },
+      "id": "Q0953"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #10: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 10",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 10."
+      },
+      "id": "Q0954"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #11: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 11",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 11."
+      },
+      "id": "Q0955"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #12: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 12",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 12."
+      },
+      "id": "Q0956"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #13: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 13",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 13."
+      },
+      "id": "Q0957"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #14: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 14",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 14."
+      },
+      "id": "Q0958"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #15: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 15",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 15."
+      },
+      "id": "Q0959"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #16: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 16",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 16."
+      },
+      "id": "Q0960"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #17: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 17",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 17."
+      },
+      "id": "Q0961"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #18: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 18",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 18."
+      },
+      "id": "Q0962"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #19: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 19",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 19."
+      },
+      "id": "Q0963"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #20: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 20",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 20."
+      },
+      "id": "Q0964"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #21: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 21",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 21."
+      },
+      "id": "Q0965"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #22: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 22",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 22."
+      },
+      "id": "Q0966"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #23: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 23",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 23."
+      },
+      "id": "Q0967"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #24: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 24",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 24."
+      },
+      "id": "Q0968"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #25: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 25",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 25."
+      },
+      "id": "Q0969"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #26: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 26",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 26."
+      },
+      "id": "Q0970"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #27: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 27",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 27."
+      },
+      "id": "Q0971"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #28: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 28",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 28."
+      },
+      "id": "Q0972"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #29: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 29",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 29."
+      },
+      "id": "Q0973"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #30: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 30",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 30."
+      },
+      "id": "Q0974"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #31: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 31",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 31."
+      },
+      "id": "Q0975"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #32: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 32",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 32."
+      },
+      "id": "Q0976"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #33: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 33",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 33."
+      },
+      "id": "Q0977"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #34: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 34",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 34."
+      },
+      "id": "Q0978"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #35: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 35",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 35."
+      },
+      "id": "Q0979"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #36: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 36",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 36."
+      },
+      "id": "Q0980"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #37: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 37",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 37."
+      },
+      "id": "Q0981"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #38: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 38",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 38."
+      },
+      "id": "Q0982"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #39: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 39",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 39."
+      },
+      "id": "Q0983"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #40: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 40",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 40."
+      },
+      "id": "Q0984"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #41: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 41",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 41."
+      },
+      "id": "Q0985"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #42: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 42",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 42."
+      },
+      "id": "Q0986"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #43: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 43",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 43."
+      },
+      "id": "Q0987"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #44: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 44",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 44."
+      },
+      "id": "Q0988"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Symbol Tables",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In symbol tables, concept #45: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for symbol tables case 45",
+        "B": "Common misconception about symbol tables",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for symbol tables.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review symbol tables section in your notes before mock exam 45."
+      },
+      "id": "Q0989"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Phases — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 50] According to your course notes, lexical analysis produces:",
+      "options": {
+        "A": "Tokens",
+        "B": "Machine code directly (variant 1).",
+        "C": "ER diagrams (variant 1).",
+        "D": "IP routes (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Scanner groups characters into token stream.",
+        "incorrect": {
+          "B": "Code generation is later phase.",
+          "C": "Database design.",
+          "D": "Networking."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0990"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Phases — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 50] Lexical analysis produces:",
+      "options": {
+        "A": "Tokens",
+        "B": "Machine code directly (variant 2).",
+        "C": "ER diagrams (variant 2).",
+        "D": "IP routes (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Scanner groups characters into token stream.",
+        "incorrect": {
+          "B": "Code generation is later phase.",
+          "C": "Database design.",
+          "D": "Networking."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0991"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Phases — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 50] Which of the following best describes lexical analysis produces:",
+      "options": {
+        "A": "Tokens",
+        "B": "Machine code directly (variant 3).",
+        "C": "ER diagrams (variant 3).",
+        "D": "IP routes (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Scanner groups characters into token stream.",
+        "incorrect": {
+          "B": "Code generation is later phase.",
+          "C": "Database design.",
+          "D": "Networking."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0992"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Parsing — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 53] According to your course notes, a syntax error is detected during:",
+      "options": {
+        "A": "Semantic analysis only (variant 1).",
+        "B": "Syntax (parser) analysis",
+        "C": "Code optimization in OS (variant 1).",
+        "D": "DHCP (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Parser checks grammar of token stream.",
+        "incorrect": {
+          "A": "Semantics checks meaning after syntax.",
+          "C": "Unrelated.",
+          "D": "Network admin."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0993"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Parsing — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 53] A syntax error is detected during:",
+      "options": {
+        "A": "Semantic analysis only (variant 2).",
+        "B": "Syntax (parser) analysis",
+        "C": "Code optimization in OS (variant 2).",
+        "D": "DHCP (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Parser checks grammar of token stream.",
+        "incorrect": {
+          "A": "Semantics checks meaning after syntax.",
+          "C": "Unrelated.",
+          "D": "Network admin."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0994"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Parsing — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 53] Which of the following best describes a syntax error is detected during:",
+      "options": {
+        "A": "Semantic analysis only (variant 3).",
+        "B": "Syntax (parser) analysis",
+        "C": "Code optimization in OS (variant 3).",
+        "D": "DHCP (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Parser checks grammar of token stream.",
+        "incorrect": {
+          "A": "Semantics checks meaning after syntax.",
+          "C": "Unrelated.",
+          "D": "Network admin."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0995"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Code Gen — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 56] According to your course notes, intermediate representation (IR) helps compilers by:",
+      "options": {
+        "A": "Enabling machine-independent optimization",
+        "B": "Removing need for parsing (variant 1).",
+        "C": "Deleting source files (variant 1).",
+        "D": "Bypassing symbol table (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "IR separates front-end from back-end optimizations.",
+        "incorrect": {
+          "B": "Parsing still required.",
+          "C": "Source retained.",
+          "D": "Symbols still needed."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0996"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Code Gen — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 56] Intermediate representation (IR) helps compilers by:",
+      "options": {
+        "A": "Enabling machine-independent optimization",
+        "B": "Removing need for parsing (variant 2).",
+        "C": "Deleting source files (variant 2).",
+        "D": "Bypassing symbol table (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "IR separates front-end from back-end optimizations.",
+        "incorrect": {
+          "B": "Parsing still required.",
+          "C": "Source retained.",
+          "D": "Symbols still needed."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0997"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Code Gen — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 56] Which of the following best describes intermediate representation (IR) helps compilers by:",
+      "options": {
+        "A": "Enabling machine-independent optimization",
+        "B": "Removing need for parsing (variant 3).",
+        "C": "Deleting source files (variant 3).",
+        "D": "Bypassing symbol table (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "IR separates front-end from back-end optimizations.",
+        "incorrect": {
+          "B": "Parsing still required.",
+          "C": "Source retained.",
+          "D": "Symbols still needed."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0998"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Optimization — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 59] According to your course notes, constant folding is an example of:",
+      "options": {
+        "A": "Compile-time optimization",
+        "B": "Runtime DNS (variant 1).",
+        "C": "Deadlock recovery (variant 1).",
+        "D": "Normalization (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Evaluates constant expressions during compilation.",
+        "incorrect": {
+          "B": "Network.",
+          "C": "OS concept.",
+          "D": "Database."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0999"
+    },
+    {
+      "courseId": "compiler-design",
+      "themeId": "compiler-complexity",
+      "chapter": "Optimization — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Compiler Design · Item 59] Constant folding is an example of:",
+      "options": {
+        "A": "Compile-time optimization",
+        "B": "Runtime DNS (variant 2).",
+        "C": "Deadlock recovery (variant 2).",
+        "D": "Normalization (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Evaluates constant expressions during compilation.",
+        "incorrect": {
+          "B": "Network.",
+          "C": "OS concept.",
+          "D": "Database."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q1000"
+    }
+  ]
+}

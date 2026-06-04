@@ -1,0 +1,83 @@
+{
+  "title": "Ethiopian CS National Exit Exam Prep",
+  "subtitle": "Ministry of Education Blueprint-Aligned Question Bank",
+  "exam": {
+    "totalItems": 100,
+    "durationMinutes": 120,
+    "passingNote": "Based on MoE Computer Science test blueprint (2015 E.C.)"
+  },
+  "cognitiveDistribution": {
+    "remember": 10,
+    "understand": 310,
+    "apply": 230,
+    "analyze": 230,
+    "evaluate": 150,
+    "create": 70
+  },
+  "themes": [
+    {
+      "id": "system-development",
+      "name": "System Development",
+      "weight": 27,
+      "questionTarget": 270,
+      "courses": [
+        { "id": "software-engineering", "name": "Software Engineering", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "web-programming", "name": "Web Programming", "credit": 4, "items": 9, "questionTarget": 90 },
+        { "id": "database-fundamentals", "name": "Fundamentals of Database Systems", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "advanced-database", "name": "Advanced Database Systems", "credit": 3, "items": 6, "questionTarget": 60 }
+      ]
+    },
+    {
+      "id": "programming-algorithms",
+      "name": "Programming and Algorithms",
+      "weight": 25,
+      "questionTarget": 250,
+      "courses": [
+        { "id": "computer-programming", "name": "Computer Programming", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "oop", "name": "Object Oriented Programming", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "design-analysis-algorithms", "name": "Design and Analysis of Algorithms", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "data-structures-algorithms", "name": "Data Structures and Algorithms", "credit": 3, "items": 7, "questionTarget": 70 }
+      ]
+    },
+    {
+      "id": "networking-security",
+      "name": "Computer Networking and Security",
+      "weight": 18,
+      "questionTarget": 180,
+      "courses": [
+        { "id": "data-communication-networking", "name": "Data Communication and Computer Networking", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "computer-security", "name": "Computer Security", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "network-system-admin", "name": "Network and System Administration", "credit": 3, "items": 6, "questionTarget": 60 }
+      ]
+    },
+    {
+      "id": "intelligent-systems",
+      "name": "Intelligent Systems",
+      "weight": 6,
+      "questionTarget": 60,
+      "courses": [
+        { "id": "artificial-intelligence", "name": "Introduction to Artificial Intelligence", "credit": 3, "items": 6, "questionTarget": 60 }
+      ]
+    },
+    {
+      "id": "architecture-os",
+      "name": "Computer Architecture and Operating Systems",
+      "weight": 12,
+      "questionTarget": 120,
+      "courses": [
+        { "id": "operating-system", "name": "Operating System", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "computer-organization", "name": "Computer Organization and Architecture", "credit": 3, "items": 6, "questionTarget": 60 }
+      ]
+    },
+    {
+      "id": "compiler-complexity",
+      "name": "Compiler and Complexity",
+      "weight": 12,
+      "questionTarget": 120,
+      "courses": [
+        { "id": "automata-complexity", "name": "Automata and Complexity Theory", "credit": 3, "items": 6, "questionTarget": 60 },
+        { "id": "compiler-design", "name": "Compiler Design", "credit": 3, "items": 6, "questionTarget": 60 }
+      ]
+    }
+  ]
+}

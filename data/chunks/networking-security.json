@@ -1,0 +1,4506 @@
+{
+  "themeId": "networking-security",
+  "count": 180,
+  "questions": [
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Past National Exam",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In which network topology consists of a single line cable called a backbone connecting all nodes on a network without intervening connected devices?",
+      "options": {
+        "A": "Bus",
+        "B": "Ring",
+        "C": "Star",
+        "D": "MeshAnswer: A. Bus"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "In a bus topology, all nodes are connected to a single central cable \ncalled the backbone. Data sent by a node is transmitted along the backbone, and \nall other nodes receive the data, but only the intended recipient processes it. This \ntopology is simple and inexpensive but can suffer from performance issues as \nmore devices are added.",
+        "incorrect": {
+          "B": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "C": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "D": "This option is incorrect because it does not match the concept tested in the question stem."
+        },
+        "commonMistake": "Students often pick familiar terms without matching the precise definition required by MoE items."
+      },
+      "id": "Q0521"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Past National Exam",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "A PC obtains its IP address from a DHCP server. If the PC is taken off the network for repair, what happens to the IP address configuration?",
+      "options": {
+        "A": "The address is returned to the pool for reuse when the lease expires.",
+        "B": "The address lease is automatically renewed until the PC is returned.",
+        "C": "The configuration is held by the server to be reissued when the PC is returned.",
+        "D": "The configuration is permanent and nothing changes."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "In DHCP (Dynamic Host Configuration Protocol), IP addresses are \ntypically leased for a set period. If a device is disconnected from the network and \nits lease expires, the IP address is returned to the pool, making it available for \nother devices on the network. When the device reconnects, it may receive a new \nIP address, depending on availability.",
+        "incorrect": {
+          "B": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "C": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "D": "This option is incorrect because it does not match the concept tested in the question stem."
+        },
+        "commonMistake": "Students often pick familiar terms without matching the precise definition required by MoE items."
+      },
+      "id": "Q0522"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Past National Exam",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In which network topology should every computer have N-1 I/O ports when there is N number of computers in the network?",
+      "options": {
+        "A": "Star",
+        "B": "Mesh",
+        "C": "Bus",
+        "D": "Ring"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "In a mesh topology, every computer is directly connected to every \nother computer in the network. If there are N computers, each computer requires \nN-1 I/O ports for direct connections to the other N-1 computers. This topology \nprovides high redundancy and reliability but comes at the cost of high hardware \nand cabling requirements.",
+        "incorrect": {
+          "A": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "C": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "D": "This option is incorrect because it does not match the concept tested in the question stem."
+        },
+        "commonMistake": "Students often pick familiar terms without matching the precise definition required by MoE items."
+      },
+      "id": "Q0523"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "The OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical",
+        "B": "Data Link",
+        "C": "Network",
+        "D": "Application"
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0524"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "TCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption",
+        "D": "MAC addressing"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0525"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "A /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0",
+        "C": "255.0.0.0",
+        "D": "255.255.255.0"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0526"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "DNS primarily translates:",
+      "options": {
+        "A": "IP to MAC",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code",
+        "D": "Tables to 3NF"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0527"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 5] According to your course notes, the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 1).",
+        "B": "Data Link (variant 1).",
+        "C": "Network",
+        "D": "Application (variant 1)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0528"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 5] The OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 2).",
+        "B": "Data Link (variant 2).",
+        "C": "Network",
+        "D": "Application (variant 2)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0529"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 5] Which of the following best describes the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 3).",
+        "B": "Data Link (variant 3).",
+        "C": "Network",
+        "D": "Application (variant 3)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0530"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 8] According to your course notes, tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 1).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 1).",
+        "D": "MAC addressing (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0531"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 8] TCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 2).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 2).",
+        "D": "MAC addressing (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0532"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 8] Which of the following best describes tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 3).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 3).",
+        "D": "MAC addressing (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0533"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 11] According to your course notes, a /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 1).",
+        "C": "255.0.0.0 (variant 1).",
+        "D": "255.255.255.0 (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0534"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 11] A /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 2).",
+        "C": "255.0.0.0 (variant 2).",
+        "D": "255.255.255.0 (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0535"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 11] Which of the following best describes a /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 3).",
+        "C": "255.0.0.0 (variant 3).",
+        "D": "255.255.255.0 (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0536"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 14] According to your course notes, dNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 1).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 1).",
+        "D": "Tables to 3NF (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0537"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 14] DNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 2).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 2).",
+        "D": "Tables to 3NF (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0538"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 14] Which of the following best describes dNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 3).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 3).",
+        "D": "Tables to 3NF (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0539"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 17] According to your course notes, the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 1).",
+        "B": "Data Link (variant 1).",
+        "C": "Network",
+        "D": "Application (variant 1)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0540"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 17] The OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 2).",
+        "B": "Data Link (variant 2).",
+        "C": "Network",
+        "D": "Application (variant 2)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0541"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 17] Which of the following best describes the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 3).",
+        "B": "Data Link (variant 3).",
+        "C": "Network",
+        "D": "Application (variant 3)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0542"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 20] According to your course notes, tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 1).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 1).",
+        "D": "MAC addressing (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0543"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 20] TCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 2).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 2).",
+        "D": "MAC addressing (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0544"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 20] Which of the following best describes tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 3).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 3).",
+        "D": "MAC addressing (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0545"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 23] According to your course notes, a /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 1).",
+        "C": "255.0.0.0 (variant 1).",
+        "D": "255.255.255.0 (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0546"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 23] A /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 2).",
+        "C": "255.0.0.0 (variant 2).",
+        "D": "255.255.255.0 (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0547"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 23] Which of the following best describes a /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 3).",
+        "C": "255.0.0.0 (variant 3).",
+        "D": "255.255.255.0 (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0548"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 26] According to your course notes, dNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 1).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 1).",
+        "D": "Tables to 3NF (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0549"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 26] DNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 2).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 2).",
+        "D": "Tables to 3NF (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0550"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 26] Which of the following best describes dNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 3).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 3).",
+        "D": "Tables to 3NF (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0551"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 29] According to your course notes, the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 1).",
+        "B": "Data Link (variant 1).",
+        "C": "Network",
+        "D": "Application (variant 1)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0552"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 29] The OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 2).",
+        "B": "Data Link (variant 2).",
+        "C": "Network",
+        "D": "Application (variant 2)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0553"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 29] Which of the following best describes the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 3).",
+        "B": "Data Link (variant 3).",
+        "C": "Network",
+        "D": "Application (variant 3)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0554"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 32] According to your course notes, tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 1).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 1).",
+        "D": "MAC addressing (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0555"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 32] TCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 2).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 2).",
+        "D": "MAC addressing (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0556"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 32] Which of the following best describes tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 3).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 3).",
+        "D": "MAC addressing (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0557"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 35] According to your course notes, a /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 1).",
+        "C": "255.0.0.0 (variant 1).",
+        "D": "255.255.255.0 (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0558"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 35] A /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 2).",
+        "C": "255.0.0.0 (variant 2).",
+        "D": "255.255.255.0 (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0559"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 35] Which of the following best describes a /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 3).",
+        "C": "255.0.0.0 (variant 3).",
+        "D": "255.255.255.0 (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0560"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 38] According to your course notes, dNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 1).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 1).",
+        "D": "Tables to 3NF (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0561"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 38] DNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 2).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 2).",
+        "D": "Tables to 3NF (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0562"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 38] Which of the following best describes dNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 3).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 3).",
+        "D": "Tables to 3NF (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0563"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 41] According to your course notes, the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 1).",
+        "B": "Data Link (variant 1).",
+        "C": "Network",
+        "D": "Application (variant 1)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0564"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 41] The OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 2).",
+        "B": "Data Link (variant 2).",
+        "C": "Network",
+        "D": "Application (variant 2)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0565"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 41] Which of the following best describes the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 3).",
+        "B": "Data Link (variant 3).",
+        "C": "Network",
+        "D": "Application (variant 3)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0566"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 44] According to your course notes, tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 1).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 1).",
+        "D": "MAC addressing (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0567"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 44] TCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 2).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 2).",
+        "D": "MAC addressing (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0568"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 44] Which of the following best describes tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 3).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 3).",
+        "D": "MAC addressing (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0569"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 47] According to your course notes, a /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 1).",
+        "C": "255.0.0.0 (variant 1).",
+        "D": "255.255.255.0 (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0570"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 47] A /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 2).",
+        "C": "255.0.0.0 (variant 2).",
+        "D": "255.255.255.0 (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0571"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "Subnetting — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 47] Which of the following best describes a /26 IPv4 subnet mask in dotted decimal is:",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.0.0 (variant 3).",
+        "C": "255.0.0.0 (variant 3).",
+        "D": "255.255.255.0 (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "26 bits = 255.255.255.192 (64 addresses).",
+        "incorrect": {
+          "B": "/16 mask.",
+          "C": "/8 mask.",
+          "D": "/24 mask."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0572"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 50] According to your course notes, dNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 1).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 1).",
+        "D": "Tables to 3NF (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0573"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 50] DNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 2).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 2).",
+        "D": "Tables to 3NF (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0574"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "DNS — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 50] Which of the following best describes dNS primarily translates:",
+      "options": {
+        "A": "IP to MAC (variant 3).",
+        "B": "Domain names to IP addresses",
+        "C": "Source code to machine code (variant 3).",
+        "D": "Tables to 3NF (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Name resolution for human-readable hosts.",
+        "incorrect": {
+          "A": "ARP does MAC.",
+          "C": "Compiler job.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0575"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 53] According to your course notes, the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 1).",
+        "B": "Data Link (variant 1).",
+        "C": "Network",
+        "D": "Application (variant 1)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0576"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 53] The OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 2).",
+        "B": "Data Link (variant 2).",
+        "C": "Network",
+        "D": "Application (variant 2)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0577"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "OSI — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 53] Which of the following best describes the OSI layer responsible for routing and logical addressing is:",
+      "options": {
+        "A": "Physical (variant 3).",
+        "B": "Data Link (variant 3).",
+        "C": "Network",
+        "D": "Application (variant 3)."
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Layer 3 (Network) handles IP and routing.",
+        "incorrect": {
+          "A": "Physical is bits on wire.",
+          "B": "Data link is frames/MAC.",
+          "D": "Application is end-user protocols."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0578"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 56] According to your course notes, tCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 1).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 1).",
+        "D": "MAC addressing (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0579"
+    },
+    {
+      "courseId": "data-communication-networking",
+      "themeId": "networking-security",
+      "chapter": "TCP/IP — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Data Communication Networking · Item 56] TCP provides:",
+      "options": {
+        "A": "Connectionless unreliable delivery (variant 2).",
+        "B": "Connection-oriented reliable delivery",
+        "C": "Only encryption (variant 2).",
+        "D": "MAC addressing (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "TCP establishes connections, ACKs, retransmits.",
+        "incorrect": {
+          "A": "That describes UDP.",
+          "C": "TLS adds encryption.",
+          "D": "MAC is layer 2."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0580"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "CIA",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Confidentiality ensures:",
+      "options": {
+        "A": "Data is available 24/7",
+        "B": "Unauthorized parties cannot read data",
+        "C": "Packets route faster",
+        "D": "Code compiles"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Only authorized subjects access information.",
+        "incorrect": {
+          "A": "Availability pillar.",
+          "C": "Performance not CIA.",
+          "D": "Compilation unrelated."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0581"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Crypto",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Symmetric encryption uses:",
+      "options": {
+        "A": "Same key for encrypt and decrypt",
+        "B": "Public/private key pair only",
+        "C": "No keys",
+        "D": "DNS records"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Shared secret key—AES example.",
+        "incorrect": {
+          "B": "Asymmetric uses key pairs.",
+          "C": "Keys required.",
+          "D": "DNS unrelated."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0582"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Attacks",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Phishing primarily exploits:",
+      "options": {
+        "A": "Human trust via deceptive messages",
+        "B": "CPU cache timing only",
+        "C": "Normalization anomalies",
+        "D": "Garbage collection"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Social engineering to steal credentials.",
+        "incorrect": {
+          "B": "Side channels differ.",
+          "C": "Database concept.",
+          "D": "Memory management."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0583"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Access",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Role-Based Access Control assigns permissions based on:",
+      "options": {
+        "A": "User roles in organization",
+        "B": "Packet size",
+        "C": "Compiler phases",
+        "D": "HTML color"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Roles aggregate privileges for users.",
+        "incorrect": {
+          "B": "Network metric.",
+          "C": "Compile pipeline.",
+          "D": "Presentation."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0584"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #1: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 1",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 1."
+      },
+      "id": "Q0585"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #2: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 2",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 2."
+      },
+      "id": "Q0586"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #3: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 3",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 3."
+      },
+      "id": "Q0587"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #4: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 4",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 4."
+      },
+      "id": "Q0588"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #5: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 5",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 5."
+      },
+      "id": "Q0589"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #6: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 6",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 6."
+      },
+      "id": "Q0590"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #7: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 7",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 7."
+      },
+      "id": "Q0591"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #8: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 8",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 8."
+      },
+      "id": "Q0592"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #9: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 9",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 9."
+      },
+      "id": "Q0593"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #10: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 10",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 10."
+      },
+      "id": "Q0594"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #11: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 11",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 11."
+      },
+      "id": "Q0595"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #12: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 12",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 12."
+      },
+      "id": "Q0596"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #13: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 13",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 13."
+      },
+      "id": "Q0597"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #14: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 14",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 14."
+      },
+      "id": "Q0598"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #15: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 15",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 15."
+      },
+      "id": "Q0599"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #16: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 16",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 16."
+      },
+      "id": "Q0600"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #17: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 17",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 17."
+      },
+      "id": "Q0601"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #18: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 18",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 18."
+      },
+      "id": "Q0602"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #19: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 19",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 19."
+      },
+      "id": "Q0603"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #20: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 20",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 20."
+      },
+      "id": "Q0604"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #21: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 21",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 21."
+      },
+      "id": "Q0605"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #22: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 22",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 22."
+      },
+      "id": "Q0606"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #23: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 23",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 23."
+      },
+      "id": "Q0607"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #24: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 24",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 24."
+      },
+      "id": "Q0608"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #25: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 25",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 25."
+      },
+      "id": "Q0609"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #26: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 26",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 26."
+      },
+      "id": "Q0610"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #27: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 27",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 27."
+      },
+      "id": "Q0611"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #28: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 28",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 28."
+      },
+      "id": "Q0612"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #29: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 29",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 29."
+      },
+      "id": "Q0613"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #30: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 30",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 30."
+      },
+      "id": "Q0614"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #31: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 31",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 31."
+      },
+      "id": "Q0615"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #32: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 32",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 32."
+      },
+      "id": "Q0616"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #33: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 33",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 33."
+      },
+      "id": "Q0617"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #34: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 34",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 34."
+      },
+      "id": "Q0618"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #35: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 35",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 35."
+      },
+      "id": "Q0619"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #36: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 36",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 36."
+      },
+      "id": "Q0620"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #37: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 37",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 37."
+      },
+      "id": "Q0621"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #38: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 38",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 38."
+      },
+      "id": "Q0622"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #39: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 39",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 39."
+      },
+      "id": "Q0623"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #40: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 40",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 40."
+      },
+      "id": "Q0624"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #41: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 41",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 41."
+      },
+      "id": "Q0625"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #42: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 42",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 42."
+      },
+      "id": "Q0626"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #43: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 43",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 43."
+      },
+      "id": "Q0627"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #44: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 44",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 44."
+      },
+      "id": "Q0628"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Malware Types",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In malware types, concept #45: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for malware types case 45",
+        "B": "Common misconception about malware types",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for malware types.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review malware types section in your notes before mock exam 45."
+      },
+      "id": "Q0629"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "CIA — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 50] According to your course notes, confidentiality ensures:",
+      "options": {
+        "A": "Data is available 24/7 (variant 1).",
+        "B": "Unauthorized parties cannot read data",
+        "C": "Packets route faster (variant 1).",
+        "D": "Code compiles (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Only authorized subjects access information.",
+        "incorrect": {
+          "A": "Availability pillar.",
+          "C": "Performance not CIA.",
+          "D": "Compilation unrelated."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0630"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "CIA — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 50] Confidentiality ensures:",
+      "options": {
+        "A": "Data is available 24/7 (variant 2).",
+        "B": "Unauthorized parties cannot read data",
+        "C": "Packets route faster (variant 2).",
+        "D": "Code compiles (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Only authorized subjects access information.",
+        "incorrect": {
+          "A": "Availability pillar.",
+          "C": "Performance not CIA.",
+          "D": "Compilation unrelated."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0631"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "CIA — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 50] Which of the following best describes confidentiality ensures:",
+      "options": {
+        "A": "Data is available 24/7 (variant 3).",
+        "B": "Unauthorized parties cannot read data",
+        "C": "Packets route faster (variant 3).",
+        "D": "Code compiles (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Only authorized subjects access information.",
+        "incorrect": {
+          "A": "Availability pillar.",
+          "C": "Performance not CIA.",
+          "D": "Compilation unrelated."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0632"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Crypto — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 53] According to your course notes, symmetric encryption uses:",
+      "options": {
+        "A": "Same key for encrypt and decrypt",
+        "B": "Public/private key pair only (variant 1).",
+        "C": "No keys (variant 1).",
+        "D": "DNS records (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Shared secret key—AES example.",
+        "incorrect": {
+          "B": "Asymmetric uses key pairs.",
+          "C": "Keys required.",
+          "D": "DNS unrelated."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0633"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Crypto — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 53] Symmetric encryption uses:",
+      "options": {
+        "A": "Same key for encrypt and decrypt",
+        "B": "Public/private key pair only (variant 2).",
+        "C": "No keys (variant 2).",
+        "D": "DNS records (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Shared secret key—AES example.",
+        "incorrect": {
+          "B": "Asymmetric uses key pairs.",
+          "C": "Keys required.",
+          "D": "DNS unrelated."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0634"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Crypto — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 53] Which of the following best describes symmetric encryption uses:",
+      "options": {
+        "A": "Same key for encrypt and decrypt",
+        "B": "Public/private key pair only (variant 3).",
+        "C": "No keys (variant 3).",
+        "D": "DNS records (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Shared secret key—AES example.",
+        "incorrect": {
+          "B": "Asymmetric uses key pairs.",
+          "C": "Keys required.",
+          "D": "DNS unrelated."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0635"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Attacks — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 56] According to your course notes, phishing primarily exploits:",
+      "options": {
+        "A": "Human trust via deceptive messages",
+        "B": "CPU cache timing only (variant 1).",
+        "C": "Normalization anomalies (variant 1).",
+        "D": "Garbage collection (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Social engineering to steal credentials.",
+        "incorrect": {
+          "B": "Side channels differ.",
+          "C": "Database concept.",
+          "D": "Memory management."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0636"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Attacks — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 56] Phishing primarily exploits:",
+      "options": {
+        "A": "Human trust via deceptive messages",
+        "B": "CPU cache timing only (variant 2).",
+        "C": "Normalization anomalies (variant 2).",
+        "D": "Garbage collection (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Social engineering to steal credentials.",
+        "incorrect": {
+          "B": "Side channels differ.",
+          "C": "Database concept.",
+          "D": "Memory management."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0637"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Attacks — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 56] Which of the following best describes phishing primarily exploits:",
+      "options": {
+        "A": "Human trust via deceptive messages",
+        "B": "CPU cache timing only (variant 3).",
+        "C": "Normalization anomalies (variant 3).",
+        "D": "Garbage collection (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Social engineering to steal credentials.",
+        "incorrect": {
+          "B": "Side channels differ.",
+          "C": "Database concept.",
+          "D": "Memory management."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0638"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Access — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 59] According to your course notes, role-Based Access Control assigns permissions based on:",
+      "options": {
+        "A": "User roles in organization",
+        "B": "Packet size (variant 1).",
+        "C": "Compiler phases (variant 1).",
+        "D": "HTML color (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Roles aggregate privileges for users.",
+        "incorrect": {
+          "B": "Network metric.",
+          "C": "Compile pipeline.",
+          "D": "Presentation."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0639"
+    },
+    {
+      "courseId": "computer-security",
+      "themeId": "networking-security",
+      "chapter": "Access — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Computer Security · Item 59] Role-Based Access Control assigns permissions based on:",
+      "options": {
+        "A": "User roles in organization",
+        "B": "Packet size (variant 2).",
+        "C": "Compiler phases (variant 2).",
+        "D": "HTML color (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Roles aggregate privileges for users.",
+        "incorrect": {
+          "B": "Network metric.",
+          "C": "Compile pipeline.",
+          "D": "Presentation."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0640"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "DHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags",
+        "C": "UML diagrams",
+        "D": "Primary keys"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0641"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls",
+        "B": "ss or netstat",
+        "C": "mkdir",
+        "D": "chmod only"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0642"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes",
+        "C": "Only deletes files",
+        "D": "Is normalization"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0643"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 4] According to your course notes, dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 1).",
+        "C": "UML diagrams (variant 1).",
+        "D": "Primary keys (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0644"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 4] DHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 2).",
+        "C": "UML diagrams (variant 2).",
+        "D": "Primary keys (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0645"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 4] Which of the following best describes dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 3).",
+        "C": "UML diagrams (variant 3).",
+        "D": "Primary keys (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0646"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 7] According to your course notes, which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 1).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 1).",
+        "D": "chmod only (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0647"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 7] Which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 2).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 2).",
+        "D": "chmod only (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0648"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 7] Which of the following best describes which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 3).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 3).",
+        "D": "chmod only (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0649"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 10] According to your course notes, full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 1).",
+        "C": "Only deletes files (variant 1).",
+        "D": "Is normalization (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0650"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 10] Full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 2).",
+        "C": "Only deletes files (variant 2).",
+        "D": "Is normalization (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0651"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 10] Which of the following best describes full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 3).",
+        "C": "Only deletes files (variant 3).",
+        "D": "Is normalization (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0652"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 13] According to your course notes, dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 1).",
+        "C": "UML diagrams (variant 1).",
+        "D": "Primary keys (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0653"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 13] DHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 2).",
+        "C": "UML diagrams (variant 2).",
+        "D": "Primary keys (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0654"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 13] Which of the following best describes dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 3).",
+        "C": "UML diagrams (variant 3).",
+        "D": "Primary keys (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0655"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 16] According to your course notes, which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 1).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 1).",
+        "D": "chmod only (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0656"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 16] Which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 2).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 2).",
+        "D": "chmod only (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0657"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 16] Which of the following best describes which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 3).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 3).",
+        "D": "chmod only (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0658"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 19] According to your course notes, full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 1).",
+        "C": "Only deletes files (variant 1).",
+        "D": "Is normalization (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0659"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 19] Full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 2).",
+        "C": "Only deletes files (variant 2).",
+        "D": "Is normalization (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0660"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 19] Which of the following best describes full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 3).",
+        "C": "Only deletes files (variant 3).",
+        "D": "Is normalization (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0661"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 22] According to your course notes, dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 1).",
+        "C": "UML diagrams (variant 1).",
+        "D": "Primary keys (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0662"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 22] DHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 2).",
+        "C": "UML diagrams (variant 2).",
+        "D": "Primary keys (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0663"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 22] Which of the following best describes dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 3).",
+        "C": "UML diagrams (variant 3).",
+        "D": "Primary keys (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0664"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 25] According to your course notes, which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 1).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 1).",
+        "D": "chmod only (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0665"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 25] Which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 2).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 2).",
+        "D": "chmod only (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0666"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 25] Which of the following best describes which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 3).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 3).",
+        "D": "chmod only (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0667"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 28] According to your course notes, full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 1).",
+        "C": "Only deletes files (variant 1).",
+        "D": "Is normalization (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0668"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 28] Full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 2).",
+        "C": "Only deletes files (variant 2).",
+        "D": "Is normalization (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0669"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 28] Which of the following best describes full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 3).",
+        "C": "Only deletes files (variant 3).",
+        "D": "Is normalization (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0670"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 31] According to your course notes, dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 1).",
+        "C": "UML diagrams (variant 1).",
+        "D": "Primary keys (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0671"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 31] DHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 2).",
+        "C": "UML diagrams (variant 2).",
+        "D": "Primary keys (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0672"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 31] Which of the following best describes dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 3).",
+        "C": "UML diagrams (variant 3).",
+        "D": "Primary keys (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0673"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 34] According to your course notes, which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 1).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 1).",
+        "D": "chmod only (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0674"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 34] Which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 2).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 2).",
+        "D": "chmod only (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0675"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 34] Which of the following best describes which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 3).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 3).",
+        "D": "chmod only (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0676"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 37] According to your course notes, full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 1).",
+        "C": "Only deletes files (variant 1).",
+        "D": "Is normalization (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0677"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 37] Full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 2).",
+        "C": "Only deletes files (variant 2).",
+        "D": "Is normalization (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0678"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 37] Which of the following best describes full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 3).",
+        "C": "Only deletes files (variant 3).",
+        "D": "Is normalization (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0679"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 40] According to your course notes, dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 1).",
+        "C": "UML diagrams (variant 1).",
+        "D": "Primary keys (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0680"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 40] DHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 2).",
+        "C": "UML diagrams (variant 2).",
+        "D": "Primary keys (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0681"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 40] Which of the following best describes dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 3).",
+        "C": "UML diagrams (variant 3).",
+        "D": "Primary keys (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0682"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 43] According to your course notes, which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 1).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 1).",
+        "D": "chmod only (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0683"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 43] Which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 2).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 2).",
+        "D": "chmod only (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0684"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 43] Which of the following best describes which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 3).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 3).",
+        "D": "chmod only (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0685"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 46] According to your course notes, full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 1).",
+        "C": "Only deletes files (variant 1).",
+        "D": "Is normalization (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0686"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 46] Full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 2).",
+        "C": "Only deletes files (variant 2).",
+        "D": "Is normalization (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0687"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 46] Which of the following best describes full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 3).",
+        "C": "Only deletes files (variant 3).",
+        "D": "Is normalization (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0688"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 49] According to your course notes, dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 1).",
+        "C": "UML diagrams (variant 1).",
+        "D": "Primary keys (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0689"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 49] DHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 2).",
+        "C": "UML diagrams (variant 2).",
+        "D": "Primary keys (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0690"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 49] Which of the following best describes dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 3).",
+        "C": "UML diagrams (variant 3).",
+        "D": "Primary keys (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0691"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 52] According to your course notes, which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 1).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 1).",
+        "D": "chmod only (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0692"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 52] Which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 2).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 2).",
+        "D": "chmod only (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0693"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Linux — Practice 3",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 52] Which of the following best describes which command displays listening TCP ports on Linux?",
+      "options": {
+        "A": "ls (variant 3).",
+        "B": "ss or netstat",
+        "C": "mkdir (variant 3).",
+        "D": "chmod only (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "ss/netstat show socket statistics.",
+        "incorrect": {
+          "A": "Lists files.",
+          "C": "Creates directory.",
+          "D": "Changes permissions."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0694"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 55] According to your course notes, full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 1).",
+        "C": "Only deletes files (variant 1).",
+        "D": "Is normalization (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0695"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 55] Full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 2).",
+        "C": "Only deletes files (variant 2).",
+        "D": "Is normalization (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0696"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Backup — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 55] Which of the following best describes full backup compared to incremental:",
+      "options": {
+        "A": "Copies all selected data each time",
+        "B": "Never copies changes (variant 3).",
+        "C": "Only deletes files (variant 3).",
+        "D": "Is normalization (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Full backup is complete snapshot; incremental since last backup.",
+        "incorrect": {
+          "B": "Incremental captures changes.",
+          "C": "Backups copy/restore.",
+          "D": "Database term."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0697"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 58] According to your course notes, dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 1).",
+        "C": "UML diagrams (variant 1).",
+        "D": "Primary keys (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0698"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 2",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 58] DHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 2).",
+        "C": "UML diagrams (variant 2).",
+        "D": "Primary keys (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0699"
+    },
+    {
+      "courseId": "network-system-admin",
+      "themeId": "networking-security",
+      "chapter": "Admin — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Network System Admin · Item 58] Which of the following best describes dHCP automatically assigns:",
+      "options": {
+        "A": "IP configuration to clients",
+        "B": "Compiler flags (variant 3).",
+        "C": "UML diagrams (variant 3).",
+        "D": "Primary keys (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Lease of IP, mask, gateway, DNS.",
+        "incorrect": {
+          "B": "Build settings.",
+          "C": "Design artifacts.",
+          "D": "Database keys."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0700"
+    }
+  ]
+}

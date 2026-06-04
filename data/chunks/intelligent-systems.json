@@ -1,0 +1,1506 @@
+{
+  "themeId": "intelligent-systems",
+  "count": 60,
+  "questions": [
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Past National Exam",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "Which reasoning technique in artificial intelligence is based on a set of rules and logical inference to derive conclusions?",
+      "options": {
+        "A": "Abductive reasoning",
+        "B": "Analogical reasoning",
+        "C": "Deductive reasoning",
+        "D": "Inductive reasoning"
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "Deductive reasoning in artificial intelligence is based on applying a \nset of predefined rules and logical inference to draw conclusions from given \npremises. It moves from general principles to specific conclusions, making it a \nkey method in rule-based AI systems.",
+        "incorrect": {
+          "A": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "B": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "D": "This option is incorrect because it does not match the concept tested in the question stem."
+        },
+        "commonMistake": "Students often pick familiar terms without matching the precise definition required by MoE items."
+      },
+      "id": "Q0701"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Past National Exam",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "Which of the following is NOT TRUE about reasoning?",
+      "options": {
+        "A": "Knowledge system to do something.",
+        "B": "A process of thinking, logically arguing, and drawing inference.",
+        "C": "Theory of blind searching.",
+        "D": "The act of deriving a conclusion from certain premises using a given "
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "\"Blind searching\" refers to a search strategy in algorithms, \nparticularly in artificial intelligence, where there is no information about the \nproblem space (e.g., depth-first search). It is not directly related to reasoning, \nwhich typically involves logical thinking, drawing inferences, or deriving \nconclusions from known information.",
+        "incorrect": {
+          "A": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "B": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "D": "This option is incorrect because it does not match the concept tested in the question stem."
+        },
+        "commonMistake": "Students often pick familiar terms without matching the precise definition required by MoE items."
+      },
+      "id": "Q0702"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Reasoning",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Deductive reasoning derives conclusions that are:",
+      "options": {
+        "A": "Always false",
+        "B": "Guaranteed true if premises true",
+        "C": "Always probabilistic only",
+        "D": "Unrelated to rules"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Logical validity preserves truth from premises.",
+        "incorrect": {
+          "A": "Valid deduction is truth-preserving.",
+          "C": "Deduction is not merely probabilistic.",
+          "D": "Rule-based systems use deduction."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0703"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "A* search uses:",
+      "options": {
+        "A": "g(n) only",
+        "B": "f(n)=g(n)+h(n) with admissible heuristic",
+        "C": "No heuristic",
+        "D": "Only random walks"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Combines path cost and estimate to goal.",
+        "incorrect": {
+          "A": "Ignores heuristic.",
+          "C": "Heuristic is essential.",
+          "D": "Not random."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0704"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "ML",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Supervised learning requires:",
+      "options": {
+        "A": "Labeled training data",
+        "B": "No labels ever",
+        "C": "Only hardware manuals",
+        "D": "DNS zones"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Input-output pairs guide learning.",
+        "incorrect": {
+          "B": "Unsupervised lacks labels.",
+          "C": "Manuals are docs.",
+          "D": "Network config."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0705"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Knowledge",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "A knowledge base in rule-based AI stores:",
+      "options": {
+        "A": "Facts and rules for inference",
+        "B": "Only pixels",
+        "C": "TCP ports",
+        "D": "CSS colors"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Inference engine applies rules to facts.",
+        "incorrect": {
+          "B": "Vision uses pixels separately.",
+          "C": "Networking.",
+          "D": "Styling."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0706"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #1: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 1",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 1."
+      },
+      "id": "Q0707"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #2: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 2",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 2."
+      },
+      "id": "Q0708"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #3: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 3",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 3."
+      },
+      "id": "Q0709"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #4: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 4",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 4."
+      },
+      "id": "Q0710"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #5: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 5",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 5."
+      },
+      "id": "Q0711"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #6: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 6",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 6."
+      },
+      "id": "Q0712"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #7: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 7",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 7."
+      },
+      "id": "Q0713"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #8: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 8",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 8."
+      },
+      "id": "Q0714"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #9: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 9",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 9."
+      },
+      "id": "Q0715"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #10: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 10",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 10."
+      },
+      "id": "Q0716"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #11: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 11",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 11."
+      },
+      "id": "Q0717"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #12: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 12",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 12."
+      },
+      "id": "Q0718"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #13: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 13",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 13."
+      },
+      "id": "Q0719"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #14: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 14",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 14."
+      },
+      "id": "Q0720"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #15: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 15",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 15."
+      },
+      "id": "Q0721"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #16: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 16",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 16."
+      },
+      "id": "Q0722"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #17: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 17",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 17."
+      },
+      "id": "Q0723"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #18: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 18",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 18."
+      },
+      "id": "Q0724"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #19: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 19",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 19."
+      },
+      "id": "Q0725"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #20: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 20",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 20."
+      },
+      "id": "Q0726"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #21: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 21",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 21."
+      },
+      "id": "Q0727"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #22: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 22",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 22."
+      },
+      "id": "Q0728"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #23: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 23",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 23."
+      },
+      "id": "Q0729"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #24: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 24",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 24."
+      },
+      "id": "Q0730"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #25: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 25",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 25."
+      },
+      "id": "Q0731"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #26: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 26",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 26."
+      },
+      "id": "Q0732"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #27: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 27",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 27."
+      },
+      "id": "Q0733"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #28: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 28",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 28."
+      },
+      "id": "Q0734"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #29: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 29",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 29."
+      },
+      "id": "Q0735"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #30: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 30",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 30."
+      },
+      "id": "Q0736"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #31: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 31",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 31."
+      },
+      "id": "Q0737"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #32: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 32",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 32."
+      },
+      "id": "Q0738"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #33: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 33",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 33."
+      },
+      "id": "Q0739"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #34: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 34",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 34."
+      },
+      "id": "Q0740"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #35: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 35",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 35."
+      },
+      "id": "Q0741"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #36: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 36",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 36."
+      },
+      "id": "Q0742"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #37: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 37",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 37."
+      },
+      "id": "Q0743"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #38: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 38",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 38."
+      },
+      "id": "Q0744"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #39: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 39",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 39."
+      },
+      "id": "Q0745"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #40: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 40",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 40."
+      },
+      "id": "Q0746"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #41: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 41",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 41."
+      },
+      "id": "Q0747"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #42: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 42",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 42."
+      },
+      "id": "Q0748"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #43: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 43",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 43."
+      },
+      "id": "Q0749"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #44: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 44",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 44."
+      },
+      "id": "Q0750"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search Strategies",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In search strategies, concept #45: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for search strategies case 45",
+        "B": "Common misconception about search strategies",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for search strategies.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review search strategies section in your notes before mock exam 45."
+      },
+      "id": "Q0751"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Reasoning — Practice 1",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 50] According to your course notes, deductive reasoning derives conclusions that are:",
+      "options": {
+        "A": "Always false (variant 1).",
+        "B": "Guaranteed true if premises true",
+        "C": "Always probabilistic only (variant 1).",
+        "D": "Unrelated to rules (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Logical validity preserves truth from premises.",
+        "incorrect": {
+          "A": "Valid deduction is truth-preserving.",
+          "C": "Deduction is not merely probabilistic.",
+          "D": "Rule-based systems use deduction."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0752"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Reasoning — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 50] Deductive reasoning derives conclusions that are:",
+      "options": {
+        "A": "Always false (variant 2).",
+        "B": "Guaranteed true if premises true",
+        "C": "Always probabilistic only (variant 2).",
+        "D": "Unrelated to rules (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Logical validity preserves truth from premises.",
+        "incorrect": {
+          "A": "Valid deduction is truth-preserving.",
+          "C": "Deduction is not merely probabilistic.",
+          "D": "Rule-based systems use deduction."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0753"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Reasoning — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 50] Which of the following best describes deductive reasoning derives conclusions that are:",
+      "options": {
+        "A": "Always false (variant 3).",
+        "B": "Guaranteed true if premises true",
+        "C": "Always probabilistic only (variant 3).",
+        "D": "Unrelated to rules (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Logical validity preserves truth from premises.",
+        "incorrect": {
+          "A": "Valid deduction is truth-preserving.",
+          "C": "Deduction is not merely probabilistic.",
+          "D": "Rule-based systems use deduction."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0754"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search — Practice 1",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 53] According to your course notes, a* search uses:",
+      "options": {
+        "A": "g(n) only (variant 1).",
+        "B": "f(n)=g(n)+h(n) with admissible heuristic",
+        "C": "No heuristic (variant 1).",
+        "D": "Only random walks (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Combines path cost and estimate to goal.",
+        "incorrect": {
+          "A": "Ignores heuristic.",
+          "C": "Heuristic is essential.",
+          "D": "Not random."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0755"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 53] A* search uses:",
+      "options": {
+        "A": "g(n) only (variant 2).",
+        "B": "f(n)=g(n)+h(n) with admissible heuristic",
+        "C": "No heuristic (variant 2).",
+        "D": "Only random walks (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Combines path cost and estimate to goal.",
+        "incorrect": {
+          "A": "Ignores heuristic.",
+          "C": "Heuristic is essential.",
+          "D": "Not random."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0756"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "Search — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 53] Which of the following best describes a* search uses:",
+      "options": {
+        "A": "g(n) only (variant 3).",
+        "B": "f(n)=g(n)+h(n) with admissible heuristic",
+        "C": "No heuristic (variant 3).",
+        "D": "Only random walks (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Combines path cost and estimate to goal.",
+        "incorrect": {
+          "A": "Ignores heuristic.",
+          "C": "Heuristic is essential.",
+          "D": "Not random."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0757"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "ML — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 56] According to your course notes, supervised learning requires:",
+      "options": {
+        "A": "Labeled training data",
+        "B": "No labels ever (variant 1).",
+        "C": "Only hardware manuals (variant 1).",
+        "D": "DNS zones (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Input-output pairs guide learning.",
+        "incorrect": {
+          "B": "Unsupervised lacks labels.",
+          "C": "Manuals are docs.",
+          "D": "Network config."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0758"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "ML — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 56] Supervised learning requires:",
+      "options": {
+        "A": "Labeled training data",
+        "B": "No labels ever (variant 2).",
+        "C": "Only hardware manuals (variant 2).",
+        "D": "DNS zones (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Input-output pairs guide learning.",
+        "incorrect": {
+          "B": "Unsupervised lacks labels.",
+          "C": "Manuals are docs.",
+          "D": "Network config."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0759"
+    },
+    {
+      "courseId": "artificial-intelligence",
+      "themeId": "intelligent-systems",
+      "chapter": "ML — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "analyze",
+      "question": "[Artificial Intelligence · Item 56] Which of the following best describes supervised learning requires:",
+      "options": {
+        "A": "Labeled training data",
+        "B": "No labels ever (variant 3).",
+        "C": "Only hardware manuals (variant 3).",
+        "D": "DNS zones (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Input-output pairs guide learning.",
+        "incorrect": {
+          "B": "Unsupervised lacks labels.",
+          "C": "Manuals are docs.",
+          "D": "Network config."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0760"
+    }
+  ]
+}

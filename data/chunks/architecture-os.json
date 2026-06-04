@@ -1,0 +1,3006 @@
+{
+  "themeId": "architecture-os",
+  "count": 120,
+  "questions": [
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Past National Exam",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "Which scheduling algorithm is commonly associated with the concept of aging, where the priority of a task increases the longer it waits in the ready queue?",
+      "options": {
+        "A": "Round Robin (RR)",
+        "B": "Shortest Job Next (SJN)",
+        "C": "Priority Scheduling",
+        "D": "Shortest Remaining Time First (SRTF)"
+      },
+      "correct": "C",
+      "explanation": {
+        "correct": "In Priority Scheduling, the concept of aging is used to prevent \nstarvation of lower-priority tasks. Aging gradually increases the priority of a\nprocess the longer it waits in the queue, ensuring that all tasks eventually get \nexecuted.",
+        "incorrect": {
+          "A": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "B": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "D": "This option is incorrect because it does not match the concept tested in the question stem."
+        },
+        "commonMistake": "Students often pick familiar terms without matching the precise definition required by MoE items."
+      },
+      "id": "Q0761"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Past National Exam",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "All of the followings are scheduling criteria EXCEPT?",
+      "options": {
+        "A": "CPU utilization",
+        "B": "Min Turnaround Time",
+        "C": "Max Throughput",
+        "D": "Max Response Time"
+      },
+      "correct": "D",
+      "explanation": {
+        "correct": "In the context of scheduling criteria for operating systems, the goal \nis usually to minimize response time, not maximize it.",
+        "incorrect": {
+          "A": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "B": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "C": "This option is incorrect because it does not match the concept tested in the question stem."
+        },
+        "commonMistake": "Students often pick familiar terms without matching the precise definition required by MoE items."
+      },
+      "id": "Q0762"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Past National Exam",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "What is a characteristic feature of round-robin scheduling in both preemptive and non-preemptive forms?",
+      "options": {
+        "A": "It assigns priorities to tasks based on their relative importance.",
+        "B": "It always selects the task with the shortest remaining time.",
+        "C": "It favors short tasks over long tasks.",
+        "D": "It guarantees fairness by providing each task with an equal time slice."
+      },
+      "correct": "D",
+      "explanation": {
+        "correct": "Round-robin scheduling is characterized by allocating each task a \nfixed time slice (or quantum) in a cyclic order, ensuring that all tasks receive an \nequal opportunity to execute. This approach promotes fairness and is widely used \nin time-sharing systems.",
+        "incorrect": {
+          "A": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "B": "This option is incorrect because it does not match the concept tested in the question stem.",
+          "C": "This option is incorrect because it does not match the concept tested in the question stem."
+        },
+        "commonMistake": "Students often pick familiar terms without matching the precise definition required by MoE items."
+      },
+      "id": "Q0763"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Intro",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "System software such as an OS primarily:",
+      "options": {
+        "A": "Manages hardware resources and provides services",
+        "B": "Is optional for boot",
+        "C": "Only runs word processors",
+        "D": "Replaces compilers entirely"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "OS mediates CPU, memory, I/O for applications.",
+        "incorrect": {
+          "B": "OS is essential for general-purpose computing.",
+          "C": "Word processors are application software.",
+          "D": "Compilers are separate system tools."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0764"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Scheduling",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Priority scheduling may suffer:",
+      "options": {
+        "A": "Starvation of low-priority processes",
+        "B": "No ready queue",
+        "C": "Infinite CPU speed",
+        "D": "No interrupts"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Aging can mitigate starvation by boosting wait time priority.",
+        "incorrect": {
+          "B": "Ready queue always exists.",
+          "C": "Hardware limit.",
+          "D": "Interrupts are fundamental."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0765"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Memory",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Paging divides physical memory into:",
+      "options": {
+        "A": "Fixed-size frames",
+        "B": "Only segments with no pages",
+        "C": "Compiler tokens",
+        "D": "HTML blocks"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Logical pages map to physical frames.",
+        "incorrect": {
+          "B": "Segmentation is complementary technique.",
+          "C": "Compile artifact.",
+          "D": "Web markup."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0766"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Deadlock",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Four necessary conditions for deadlock include:",
+      "options": {
+        "A": "Preemption always",
+        "B": "Mutual exclusion, hold and wait, no preemption, circular wait",
+        "C": "Only one process",
+        "D": "High cohesion"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "All four must hold simultaneously for deadlock.",
+        "incorrect": {
+          "A": "Preemption prevention breaks deadlock.",
+          "C": "Multiple resources/processes involved.",
+          "D": "Design metric."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0767"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #1: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 1",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 1."
+      },
+      "id": "Q0768"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #2: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 2",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 2."
+      },
+      "id": "Q0769"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #3: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 3",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 3."
+      },
+      "id": "Q0770"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #4: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 4",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 4."
+      },
+      "id": "Q0771"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #5: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 5",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 5."
+      },
+      "id": "Q0772"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #6: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 6",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 6."
+      },
+      "id": "Q0773"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #7: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 7",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 7."
+      },
+      "id": "Q0774"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #8: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 8",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 8."
+      },
+      "id": "Q0775"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #9: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 9",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 9."
+      },
+      "id": "Q0776"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #10: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 10",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 10."
+      },
+      "id": "Q0777"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #11: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 11",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 11."
+      },
+      "id": "Q0778"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #12: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 12",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 12."
+      },
+      "id": "Q0779"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #13: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 13",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 13."
+      },
+      "id": "Q0780"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #14: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 14",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 14."
+      },
+      "id": "Q0781"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #15: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 15",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 15."
+      },
+      "id": "Q0782"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #16: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 16",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 16."
+      },
+      "id": "Q0783"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #17: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 17",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 17."
+      },
+      "id": "Q0784"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #18: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 18",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 18."
+      },
+      "id": "Q0785"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #19: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 19",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 19."
+      },
+      "id": "Q0786"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #20: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 20",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 20."
+      },
+      "id": "Q0787"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #21: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 21",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 21."
+      },
+      "id": "Q0788"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #22: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 22",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 22."
+      },
+      "id": "Q0789"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #23: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 23",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 23."
+      },
+      "id": "Q0790"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #24: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 24",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 24."
+      },
+      "id": "Q0791"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #25: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 25",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 25."
+      },
+      "id": "Q0792"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #26: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 26",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 26."
+      },
+      "id": "Q0793"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #27: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 27",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 27."
+      },
+      "id": "Q0794"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #28: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 28",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 28."
+      },
+      "id": "Q0795"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #29: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 29",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 29."
+      },
+      "id": "Q0796"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #30: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 30",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 30."
+      },
+      "id": "Q0797"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #31: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 31",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 31."
+      },
+      "id": "Q0798"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #32: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 32",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 32."
+      },
+      "id": "Q0799"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #33: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 33",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 33."
+      },
+      "id": "Q0800"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #34: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 34",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 34."
+      },
+      "id": "Q0801"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #35: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 35",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 35."
+      },
+      "id": "Q0802"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #36: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 36",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 36."
+      },
+      "id": "Q0803"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #37: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 37",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 37."
+      },
+      "id": "Q0804"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #38: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 38",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 38."
+      },
+      "id": "Q0805"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #39: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 39",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 39."
+      },
+      "id": "Q0806"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #40: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 40",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 40."
+      },
+      "id": "Q0807"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #41: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 41",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 41."
+      },
+      "id": "Q0808"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #42: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 42",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 42."
+      },
+      "id": "Q0809"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #43: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 43",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 43."
+      },
+      "id": "Q0810"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #44: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 44",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 44."
+      },
+      "id": "Q0811"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Process Synchronization",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In process synchronization, concept #45: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for process synchronization case 45",
+        "B": "Common misconception about process synchronization",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for process synchronization.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review process synchronization section in your notes before mock exam 45."
+      },
+      "id": "Q0812"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Intro — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "[Operating System · Item 50] According to your course notes, system software such as an OS primarily:",
+      "options": {
+        "A": "Manages hardware resources and provides services",
+        "B": "Is optional for boot (variant 1).",
+        "C": "Only runs word processors (variant 1).",
+        "D": "Replaces compilers entirely (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "OS mediates CPU, memory, I/O for applications.",
+        "incorrect": {
+          "B": "OS is essential for general-purpose computing.",
+          "C": "Word processors are application software.",
+          "D": "Compilers are separate system tools."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0813"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Intro — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "[Operating System · Item 50] System software such as an OS primarily:",
+      "options": {
+        "A": "Manages hardware resources and provides services",
+        "B": "Is optional for boot (variant 2).",
+        "C": "Only runs word processors (variant 2).",
+        "D": "Replaces compilers entirely (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "OS mediates CPU, memory, I/O for applications.",
+        "incorrect": {
+          "B": "OS is essential for general-purpose computing.",
+          "C": "Word processors are application software.",
+          "D": "Compilers are separate system tools."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0814"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Intro — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "[Operating System · Item 50] Which of the following best describes system software such as an OS primarily:",
+      "options": {
+        "A": "Manages hardware resources and provides services",
+        "B": "Is optional for boot (variant 3).",
+        "C": "Only runs word processors (variant 3).",
+        "D": "Replaces compilers entirely (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "OS mediates CPU, memory, I/O for applications.",
+        "incorrect": {
+          "B": "OS is essential for general-purpose computing.",
+          "C": "Word processors are application software.",
+          "D": "Compilers are separate system tools."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0815"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Scheduling — Practice 1",
+      "difficulty": "hard",
+      "cognitive": "understand",
+      "question": "[Operating System · Item 53] According to your course notes, priority scheduling may suffer:",
+      "options": {
+        "A": "Starvation of low-priority processes",
+        "B": "No ready queue (variant 1).",
+        "C": "Infinite CPU speed (variant 1).",
+        "D": "No interrupts (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Aging can mitigate starvation by boosting wait time priority.",
+        "incorrect": {
+          "B": "Ready queue always exists.",
+          "C": "Hardware limit.",
+          "D": "Interrupts are fundamental."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0816"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Scheduling — Practice 2",
+      "difficulty": "hard",
+      "cognitive": "understand",
+      "question": "[Operating System · Item 53] Priority scheduling may suffer:",
+      "options": {
+        "A": "Starvation of low-priority processes",
+        "B": "No ready queue (variant 2).",
+        "C": "Infinite CPU speed (variant 2).",
+        "D": "No interrupts (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Aging can mitigate starvation by boosting wait time priority.",
+        "incorrect": {
+          "B": "Ready queue always exists.",
+          "C": "Hardware limit.",
+          "D": "Interrupts are fundamental."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0817"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Scheduling — Practice 3",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "[Operating System · Item 53] Which of the following best describes priority scheduling may suffer:",
+      "options": {
+        "A": "Starvation of low-priority processes",
+        "B": "No ready queue (variant 3).",
+        "C": "Infinite CPU speed (variant 3).",
+        "D": "No interrupts (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Aging can mitigate starvation by boosting wait time priority.",
+        "incorrect": {
+          "B": "Ready queue always exists.",
+          "C": "Hardware limit.",
+          "D": "Interrupts are fundamental."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0818"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Memory — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "[Operating System · Item 56] According to your course notes, paging divides physical memory into:",
+      "options": {
+        "A": "Fixed-size frames",
+        "B": "Only segments with no pages (variant 1).",
+        "C": "Compiler tokens (variant 1).",
+        "D": "HTML blocks (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Logical pages map to physical frames.",
+        "incorrect": {
+          "B": "Segmentation is complementary technique.",
+          "C": "Compile artifact.",
+          "D": "Web markup."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0819"
+    },
+    {
+      "courseId": "operating-system",
+      "themeId": "architecture-os",
+      "chapter": "Memory — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "[Operating System · Item 56] Paging divides physical memory into:",
+      "options": {
+        "A": "Fixed-size frames",
+        "B": "Only segments with no pages (variant 2).",
+        "C": "Compiler tokens (variant 2).",
+        "D": "HTML blocks (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Logical pages map to physical frames.",
+        "incorrect": {
+          "B": "Segmentation is complementary technique.",
+          "C": "Compile artifact.",
+          "D": "Web markup."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0820"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Arithmetic",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Subtraction in computers is commonly performed using:",
+      "options": {
+        "A": "1's complement only",
+        "B": "2's complement representation",
+        "C": "BCD only",
+        "D": "No representation"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "2's complement turns subtraction into addition.",
+        "incorrect": {
+          "A": "1's complement less common today.",
+          "C": "BCD for decimal, not general ALU.",
+          "D": "Representation required."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0821"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Architecture",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "The ALU is responsible for:",
+      "options": {
+        "A": "Arithmetic and logic operations",
+        "B": "DNS lookup",
+        "C": "HTML parsing",
+        "D": "Normalization to 3NF"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Executes integer operations on processor datapath.",
+        "incorrect": {
+          "B": "Network service.",
+          "C": "Browser task.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0822"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Pipeline",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Pipeline hazard type when instruction needs result not yet available:",
+      "options": {
+        "A": "Structural",
+        "B": "Data hazard",
+        "C": "Marketing",
+        "D": "Phishing"
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Data hazards need forwarding or stalls.",
+        "incorrect": {
+          "A": "Structural is resource conflict.",
+          "C": "Non-technical.",
+          "D": "Security attack."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0823"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Cache",
+      "difficulty": "easy",
+      "cognitive": "understand",
+      "question": "Temporal locality means:",
+      "options": {
+        "A": "Recently accessed data likely accessed again soon",
+        "B": "Data never reused",
+        "C": "Only spatial",
+        "D": "No cache lines"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Time-based reuse pattern benefits cache.",
+        "incorrect": {
+          "B": "Opposite of temporal locality.",
+          "C": "Spatial is nearby addresses.",
+          "D": "Caches use lines."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0824"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #1: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 1",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 1."
+      },
+      "id": "Q0825"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #2: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 2",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 2."
+      },
+      "id": "Q0826"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #3: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 3",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 3."
+      },
+      "id": "Q0827"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #4: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 4",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 4."
+      },
+      "id": "Q0828"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #5: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 5",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 5."
+      },
+      "id": "Q0829"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #6: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 6",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 6."
+      },
+      "id": "Q0830"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #7: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 7",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 7."
+      },
+      "id": "Q0831"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #8: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 8",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 8."
+      },
+      "id": "Q0832"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #9: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 9",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 9."
+      },
+      "id": "Q0833"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #10: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 10",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 10."
+      },
+      "id": "Q0834"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #11: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 11",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 11."
+      },
+      "id": "Q0835"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #12: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 12",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 12."
+      },
+      "id": "Q0836"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #13: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 13",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 13."
+      },
+      "id": "Q0837"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #14: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 14",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 14."
+      },
+      "id": "Q0838"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #15: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 15",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 15."
+      },
+      "id": "Q0839"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #16: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 16",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 16."
+      },
+      "id": "Q0840"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #17: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 17",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 17."
+      },
+      "id": "Q0841"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #18: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 18",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 18."
+      },
+      "id": "Q0842"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #19: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 19",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 19."
+      },
+      "id": "Q0843"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #20: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 20",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 20."
+      },
+      "id": "Q0844"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #21: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 21",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 21."
+      },
+      "id": "Q0845"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #22: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 22",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 22."
+      },
+      "id": "Q0846"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #23: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 23",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 23."
+      },
+      "id": "Q0847"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #24: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 24",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 24."
+      },
+      "id": "Q0848"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #25: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 25",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 25."
+      },
+      "id": "Q0849"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #26: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 26",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 26."
+      },
+      "id": "Q0850"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #27: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 27",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 27."
+      },
+      "id": "Q0851"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #28: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 28",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 28."
+      },
+      "id": "Q0852"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #29: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 29",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 29."
+      },
+      "id": "Q0853"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #30: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 30",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 30."
+      },
+      "id": "Q0854"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #31: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 31",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 31."
+      },
+      "id": "Q0855"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #32: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 32",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 32."
+      },
+      "id": "Q0856"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #33: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 33",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 33."
+      },
+      "id": "Q0857"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #34: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 34",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 34."
+      },
+      "id": "Q0858"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #35: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 35",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 35."
+      },
+      "id": "Q0859"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #36: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 36",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 36."
+      },
+      "id": "Q0860"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #37: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 37",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 37."
+      },
+      "id": "Q0861"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #38: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 38",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 38."
+      },
+      "id": "Q0862"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #39: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 39",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 39."
+      },
+      "id": "Q0863"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #40: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 40",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 40."
+      },
+      "id": "Q0864"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #41: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 41",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 41."
+      },
+      "id": "Q0865"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #42: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 42",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 42."
+      },
+      "id": "Q0866"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #43: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 43",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 43."
+      },
+      "id": "Q0867"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #44: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 44",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 44."
+      },
+      "id": "Q0868"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Instruction Set Architecture",
+      "difficulty": "medium",
+      "cognitive": "understand",
+      "question": "In instruction set architecture, concept #45: which option aligns with the uploaded course summary?",
+      "options": {
+        "A": "Correct principle for instruction set architecture case 45",
+        "B": "Common misconception about instruction set architecture",
+        "C": "Unrelated hardware detail",
+        "D": "Incorrect reverse of the rule"
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "The course material emphasizes the correct principle for instruction set architecture.",
+        "incorrect": {
+          "B": "This mirrors a frequent misconception highlighted in practice.",
+          "C": "Hardware detail is out of scope for this stem.",
+          "D": "Reversing the rule produces an invalid statement."
+        },
+        "commonMistake": "Review instruction set architecture section in your notes before mock exam 45."
+      },
+      "id": "Q0869"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Arithmetic — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 50] According to your course notes, subtraction in computers is commonly performed using:",
+      "options": {
+        "A": "1's complement only (variant 1).",
+        "B": "2's complement representation",
+        "C": "BCD only (variant 1).",
+        "D": "No representation (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "2's complement turns subtraction into addition.",
+        "incorrect": {
+          "A": "1's complement less common today.",
+          "C": "BCD for decimal, not general ALU.",
+          "D": "Representation required."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0870"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Arithmetic — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 50] Subtraction in computers is commonly performed using:",
+      "options": {
+        "A": "1's complement only (variant 2).",
+        "B": "2's complement representation",
+        "C": "BCD only (variant 2).",
+        "D": "No representation (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "2's complement turns subtraction into addition.",
+        "incorrect": {
+          "A": "1's complement less common today.",
+          "C": "BCD for decimal, not general ALU.",
+          "D": "Representation required."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0871"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Arithmetic — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 50] Which of the following best describes subtraction in computers is commonly performed using:",
+      "options": {
+        "A": "1's complement only (variant 3).",
+        "B": "2's complement representation",
+        "C": "BCD only (variant 3).",
+        "D": "No representation (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "2's complement turns subtraction into addition.",
+        "incorrect": {
+          "A": "1's complement less common today.",
+          "C": "BCD for decimal, not general ALU.",
+          "D": "Representation required."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0872"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Architecture — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 53] According to your course notes, the ALU is responsible for:",
+      "options": {
+        "A": "Arithmetic and logic operations",
+        "B": "DNS lookup (variant 1).",
+        "C": "HTML parsing (variant 1).",
+        "D": "Normalization to 3NF (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Executes integer operations on processor datapath.",
+        "incorrect": {
+          "B": "Network service.",
+          "C": "Browser task.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0873"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Architecture — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 53] The ALU is responsible for:",
+      "options": {
+        "A": "Arithmetic and logic operations",
+        "B": "DNS lookup (variant 2).",
+        "C": "HTML parsing (variant 2).",
+        "D": "Normalization to 3NF (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Executes integer operations on processor datapath.",
+        "incorrect": {
+          "B": "Network service.",
+          "C": "Browser task.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0874"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Architecture — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 53] Which of the following best describes the ALU is responsible for:",
+      "options": {
+        "A": "Arithmetic and logic operations",
+        "B": "DNS lookup (variant 3).",
+        "C": "HTML parsing (variant 3).",
+        "D": "Normalization to 3NF (variant 3)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Executes integer operations on processor datapath.",
+        "incorrect": {
+          "B": "Network service.",
+          "C": "Browser task.",
+          "D": "Database design."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0875"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Pipeline — Practice 1",
+      "difficulty": "easy",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 56] According to your course notes, pipeline hazard type when instruction needs result not yet available:",
+      "options": {
+        "A": "Structural (variant 1).",
+        "B": "Data hazard",
+        "C": "Marketing (variant 1).",
+        "D": "Phishing (variant 1)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Data hazards need forwarding or stalls.",
+        "incorrect": {
+          "A": "Structural is resource conflict.",
+          "C": "Non-technical.",
+          "D": "Security attack."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0876"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Pipeline — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 56] Pipeline hazard type when instruction needs result not yet available:",
+      "options": {
+        "A": "Structural (variant 2).",
+        "B": "Data hazard",
+        "C": "Marketing (variant 2).",
+        "D": "Phishing (variant 2)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Data hazards need forwarding or stalls.",
+        "incorrect": {
+          "A": "Structural is resource conflict.",
+          "C": "Non-technical.",
+          "D": "Security attack."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0877"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Pipeline — Practice 3",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 56] Which of the following best describes pipeline hazard type when instruction needs result not yet available:",
+      "options": {
+        "A": "Structural (variant 3).",
+        "B": "Data hazard",
+        "C": "Marketing (variant 3).",
+        "D": "Phishing (variant 3)."
+      },
+      "correct": "B",
+      "explanation": {
+        "correct": "Data hazards need forwarding or stalls.",
+        "incorrect": {
+          "A": "Structural is resource conflict.",
+          "C": "Non-technical.",
+          "D": "Security attack."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0878"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Cache — Practice 1",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 59] According to your course notes, temporal locality means:",
+      "options": {
+        "A": "Recently accessed data likely accessed again soon",
+        "B": "Data never reused (variant 1).",
+        "C": "Only spatial (variant 1).",
+        "D": "No cache lines (variant 1)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Time-based reuse pattern benefits cache.",
+        "incorrect": {
+          "B": "Opposite of temporal locality.",
+          "C": "Spatial is nearby addresses.",
+          "D": "Caches use lines."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0879"
+    },
+    {
+      "courseId": "computer-organization",
+      "themeId": "architecture-os",
+      "chapter": "Cache — Practice 2",
+      "difficulty": "medium",
+      "cognitive": "evaluate",
+      "question": "[Computer Organization · Item 59] Temporal locality means:",
+      "options": {
+        "A": "Recently accessed data likely accessed again soon",
+        "B": "Data never reused (variant 2).",
+        "C": "Only spatial (variant 2).",
+        "D": "No cache lines (variant 2)."
+      },
+      "correct": "A",
+      "explanation": {
+        "correct": "Time-based reuse pattern benefits cache.",
+        "incorrect": {
+          "B": "Opposite of temporal locality.",
+          "C": "Spatial is nearby addresses.",
+          "D": "Caches use lines."
+        },
+        "commonMistake": ""
+      },
+      "id": "Q0880"
+    }
+  ]
+}
