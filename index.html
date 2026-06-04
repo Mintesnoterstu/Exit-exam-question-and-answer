@@ -6,8 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5"
     />
-    <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#1a2332" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f4f6fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1419" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta
       name="description"
       content="Ethiopian Ministry of Education Computer Science National Exit Exam preparation — 1,000 blueprint-aligned MCQs."
@@ -22,6 +24,8 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <div class="page-background" aria-hidden="true"></div>
+
     <div id="app-loader" class="loader" aria-live="polite">
       <div class="loader-card">
         <div class="loader-ring"></div>
@@ -29,12 +33,13 @@
       </div>
     </div>
 
+    <div class="app-shell">
     <header class="site-header">
       <div class="header-top">
         <div class="brand">
           <span class="brand-icon" aria-hidden="true">🎓</span>
           <div class="brand-text">
-            <h1>CS Exit Exam Prep</h1>
+            <h1 class="brand-title">CS Exit Exam Prep</h1>
             <p class="brand-sub">MoE Blueprint · 1,000 MCQs</p>
           </div>
         </div>
@@ -63,38 +68,6 @@
         <button class="nav-btn" type="button" data-view="browse">Browse</button>
       </nav>
     </header>
-
-    <nav class="bottom-nav" aria-label="Mobile navigation">
-      <button class="bottom-nav-btn active" type="button" data-view="dashboard">
-        <span class="bottom-nav-icon" aria-hidden="true">🏠</span>
-        <span class="bottom-nav-label">Home</span>
-      </button>
-      <button class="bottom-nav-btn" type="button" data-view="practice">
-        <span class="bottom-nav-icon" aria-hidden="true">📖</span>
-        <span class="bottom-nav-label">Practice</span>
-      </button>
-      <button class="bottom-nav-btn" type="button" data-view="mock">
-        <span class="bottom-nav-icon" aria-hidden="true">⏱️</span>
-        <span class="bottom-nav-label">Mock</span>
-      </button>
-      <button class="bottom-nav-btn" type="button" data-view="review">
-        <span class="bottom-nav-icon" aria-hidden="true">🔄</span>
-        <span class="bottom-nav-label">Review</span>
-      </button>
-      <button class="bottom-nav-btn" type="button" data-view="more" id="bottom-nav-more">
-        <span class="bottom-nav-icon" aria-hidden="true">⋯</span>
-        <span class="bottom-nav-label">More</span>
-      </button>
-    </nav>
-
-    <div id="mobile-menu" class="mobile-menu" hidden>
-      <div class="mobile-menu-backdrop" data-close-menu></div>
-      <div class="mobile-menu-panel" role="dialog" aria-label="More options">
-        <h2 class="mobile-menu-title">More</h2>
-        <button class="mobile-menu-item nav-btn" type="button" data-view="analytics">📊 Analytics</button>
-        <button class="mobile-menu-item nav-btn" type="button" data-view="browse">🔍 Browse Questions</button>
-      </div>
-    </div>
 
     <main class="main-content" id="main-content">
       <!-- Dashboard -->
@@ -215,6 +188,39 @@
     <footer class="site-footer">
       <p>Data stored locally in your browser · Based on MoE CS Test Blueprint</p>
     </footer>
+    </div>
+
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+      <button class="bottom-nav-btn active" type="button" data-view="dashboard">
+        <span class="bottom-nav-icon" aria-hidden="true">🏠</span>
+        <span class="bottom-nav-label">Home</span>
+      </button>
+      <button class="bottom-nav-btn" type="button" data-view="practice">
+        <span class="bottom-nav-icon" aria-hidden="true">📖</span>
+        <span class="bottom-nav-label">Practice</span>
+      </button>
+      <button class="bottom-nav-btn" type="button" data-view="mock">
+        <span class="bottom-nav-icon" aria-hidden="true">⏱️</span>
+        <span class="bottom-nav-label">Mock</span>
+      </button>
+      <button class="bottom-nav-btn" type="button" data-view="review">
+        <span class="bottom-nav-icon" aria-hidden="true">🔄</span>
+        <span class="bottom-nav-label">Review</span>
+      </button>
+      <button class="bottom-nav-btn" type="button" data-view="more" id="bottom-nav-more">
+        <span class="bottom-nav-icon" aria-hidden="true">⋯</span>
+        <span class="bottom-nav-label">More</span>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="mobile-menu-backdrop" data-close-menu></div>
+      <div class="mobile-menu-panel" role="dialog" aria-label="More options">
+        <h2 class="mobile-menu-title">More</h2>
+        <button class="mobile-menu-item nav-btn" type="button" data-view="analytics">📊 Analytics</button>
+        <button class="mobile-menu-item nav-btn" type="button" data-view="browse">🔍 Browse Questions</button>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script type="module" src="js/app.js"></script>

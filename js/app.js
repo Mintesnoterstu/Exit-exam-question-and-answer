@@ -15,7 +15,16 @@ import { renderAnalytics, renderDashboardCharts, getWeakAreas, refreshChartsOnTh
 let activeSession = null;
 let courseMap = {};
 
+function setMobileViewportHeight() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
 async function init() {
+  setMobileViewportHeight();
+  window.addEventListener("resize", setMobileViewportHeight);
+  window.addEventListener("orientationchange", () => setTimeout(setMobileViewportHeight, 100));
+
   try {
     await loadData();
     courseMap = getCourseMap();
