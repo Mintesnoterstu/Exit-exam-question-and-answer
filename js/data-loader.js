@@ -6,9 +6,10 @@ let activeBankId = "set1";
 const BANK_STORAGE_KEY = "activeQuestionBank";
 
 export async function loadData(bankId = null) {
+  const cacheBust = Date.now();
   const [metaRes, indexRes] = await Promise.all([
-    fetch("./data/metadata.json"),
-    fetch("./data/questions-index.json"),
+    fetch(`./data/metadata.json?v=${cacheBust}`),
+    fetch(`./data/questions-index.json?v=${cacheBust}`),
   ]);
   if (!metaRes.ok || !indexRes.ok) throw new Error("Failed to load exam metadata");
 
@@ -19,7 +20,8 @@ export async function loadData(bankId = null) {
   activeBankId = bankId || saved || bankIndex.banks[0]?.id || "set1";
 
   const bank = bankIndex.banks.find((b) => b.id === activeBankId) || bankIndex.banks[0];
-  const qRes = await fetch(`./data/${bank.file}`);
+  const dataVersion = bankIndex.version || cacheBust;
+  const qRes = await fetch(`./data/${bank.file}?v=${dataVersion}`);
   if (!qRes.ok) throw new Error(`Failed to load ${bank.file}`);
 
   const qData = await qRes.json();

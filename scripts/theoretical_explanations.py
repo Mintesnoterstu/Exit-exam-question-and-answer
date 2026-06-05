@@ -152,8 +152,10 @@ CONCEPT_THEORY: list[tuple[list[str], str]] = [
      "Process theory treats each process as an independent execution unit with its own address space; threads share memory within a process for lightweight concurrency."),
     (["deadlock", "mutual exclusion", "circular wait"],
      "Deadlock theory identifies four necessary conditions; prevention strategies break at least one condition (e.g., resource ordering breaks circular wait)."),
-    (["paging", "virtual memory", "page fault"],
-     "Virtual memory uses paging to map logical pages to physical frames on demand; page faults trigger OS loading from secondary storage."),
+    (["what is virtual memory", "virtual memory"],
+     "Virtual memory is a memory-management abstraction that gives each process a large private virtual address space independent of physical RAM size. The OS maps virtual pages to physical frames using paging; pages not in RAM reside on disk (swap space or paging file). The Memory Management Unit (MMU) translates virtual addresses, and a page fault loads the required page from secondary storage into a physical frame."),
+    (["paging", "page fault", "page table"],
+     "Paging divides physical memory into fixed-size frames and logical memory into pages. The page table maps virtual pages to frames, enabling demand paging and reducing external fragmentation."),
     (["tlb", "translation lookaside"],
      "The TLB is a hardware cache of page table entries that accelerates virtual-to-physical address translation."),
     (["lru", "fifo", "page replacement"],
@@ -550,12 +552,49 @@ def _infer_correct_theory(question: str, correct_text: str, course_name: str, ql
     if "what is a" in qlow or "what is an" in qlow or "what is the" in qlow:
         return (
             f"'{correct_text}' is the canonical theoretical definition of the concept named in the question "
-            f"within {course_name} — the formal description taught in exit exam course materials."
+            f"within {course_name}."
         )
     return (
-        f"In {course_name}, '{correct_text}' is the answer that satisfies the formal definition, property, "
-        f"or model theory assessed by this question according to MoE CS exit exam standards."
+        f"In {course_name}, '{correct_text}' expresses the formal definition, property, "
+        f"or theoretical model that the question is assessing."
     )
+
+
+# Question-specific theoretical explanations for common wrong answers
+QUESTION_WRONG_THEORY: list[tuple[list[str], dict[str, str]]] = [
+    (["virtual memory"], {
+        "using ram as an extension of disk": "This reverses the memory hierarchy: virtual memory theory defines disk as backing store for RAM (primary memory), not RAM extending disk.",
+        "using cache as ram": "Cache is a small, fast memory level in the hierarchy (between CPU and RAM) for locality — not a substitute for extending virtual address space beyond physical RAM.",
+        "using rom as ram": "ROM is non-volatile, read-only firmware storage and cannot serve as an extension of volatile RAM in virtual memory systems.",
+    }),
+    (["swapping in memory", "what is swapping"], {
+        "moving data between cache and memory": "Cache-memory transfers are part of the memory hierarchy for speed, not process-level swapping between main memory and disk.",
+        "moving data between registers and cache": "Register-cache movement is CPU microarchitecture — unrelated to swapping entire process address spaces.",
+        "moving data between disks": "Swapping moves process images between RAM and disk, not between disk drives.",
+    }),
+    (["thrashing"], {
+        "excessive process creation": "Process creation is a scheduling/resource issue, not the paging phenomenon where constant page faults dominate CPU time.",
+        "excessive i/o operations": "Thrashing is specifically caused by excessive paging due to insufficient frames, not general I/O load.",
+        "excessive context switching": "Context switching is related but thrashing is defined by page fault rate exceeding useful computation.",
+    }),
+    (["deadlock"], {
+        "a process waiting indefinitely for a resource": "Indefinite waiting describes starvation or blocking — deadlock requires a circular wait among multiple processes holding resources.",
+        "a process that crashes": "A crash is abnormal termination, not the circular resource dependency that defines deadlock.",
+        "a process that consumes too much cpu": "High CPU usage is not deadlock; deadlock is a state where processes are blocked waiting on each other.",
+    }),
+]
+
+
+def _explain_wrong_option(question: str, wrong_text: str, course_id: str) -> str:
+    qlow = _normalize(question)
+    wrong_low = _normalize(wrong_text)
+    for keywords, wrong_map in QUESTION_WRONG_THEORY:
+        if any(kw in qlow for kw in keywords):
+            for pattern, explanation in wrong_map.items():
+                if pattern in wrong_low:
+                    return explanation
+    opt_theory = theory_for_option(wrong_text, course_id)
+    return f"Theoretically, this describes {opt_theory}, which is a different concept from the one the question defines."
 
 
 def _question_focus(qlow: str) -> str:
@@ -595,17 +634,13 @@ def build_theoretical_explanation(
     topic_theory = detect_topic_theory(question, correct_text)
 
     if topic_theory:
-        correct_exp = (
-            f"{topic_theory} "
-            f"Therefore '{correct_text}' is the theoretically correct choice per {course_name} definitions."
-        )
+        correct_exp = topic_theory
     elif code:
         lang = code.get("language", "text")
         lang_theory = CODE_OUTPUT_THEORY.get(lang, CODE_OUTPUT_THEORY.get("java", ""))
         correct_exp = (
             f"{lang_theory} "
-            f"Under these language-theoretic rules, '{correct_text}' is the result defined by the semantics "
-            f"of {lang.upper()} operators, types, and control structures — not merely a computed trace."
+            f"By the formal semantics of {lang.upper()}, the evaluated result is '{correct_text}'."
         )
     else:
         correct_exp = _infer_correct_theory(question, correct_text, course_name, qlow)
@@ -614,11 +649,7 @@ def build_theoretical_explanation(
     for letter, text in options.items():
         if letter.upper() == correct_upper:
             continue
-        opt_theory = theory_for_option(text, course_id)
-        incorrect[letter.upper()] = (
-            f"'{text}' refers to {opt_theory}. "
-            f"This is a distinct concept from {focus}, which is what the question theoretically assesses."
-        )
+        incorrect[letter.upper()] = _explain_wrong_option(question, text, course_id)
 
     mistake = _common_mistake(qlow, course_id)
     return {"correct": correct_exp, "incorrect": incorrect, "commonMistake": mistake}

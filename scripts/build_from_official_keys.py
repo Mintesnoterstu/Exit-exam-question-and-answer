@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -126,13 +127,16 @@ def main():
         "questions": bank2,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
     (DATA / "questions-index.json").write_text(json.dumps({
+        "version": version,
         "banks": [
             {"id": "set1", "file": "questions-set1.json", "title": "Question Bank Set 1", "count": 500},
             {"id": "set2", "file": "questions-set2.json", "title": "Question Bank Set 2", "count": 500},
         ],
         "total": 1000,
     }, indent=2), encoding="utf-8")
+    print(f"Data version: {version}")
 
     print(f"User text Set1: {len(user1)}, Set2 extra: {len(user2)}")
     print("Built questions-set1.json and questions-set2.json (500 each)")
