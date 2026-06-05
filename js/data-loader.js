@@ -61,11 +61,22 @@ export function getCourseMap() {
   return map;
 }
 
+function normalizeCourseFilter(filters) {
+  if (Array.isArray(filters.courses) && filters.courses.length) {
+    return filters.courses;
+  }
+  if (filters.course) {
+    return [filters.course];
+  }
+  return [];
+}
+
 export function filterQuestions(filters = {}) {
   let list = [...questions];
-  const { course, difficulty, cognitive, theme, search, excludeIds = [] } = filters;
+  const { difficulty, cognitive, theme, search, excludeIds = [] } = filters;
+  const courseIds = normalizeCourseFilter(filters);
 
-  if (course) list = list.filter((q) => q.courseId === course);
+  if (courseIds.length) list = list.filter((q) => courseIds.includes(q.courseId));
   if (theme) list = list.filter((q) => q.themeId === theme);
   if (difficulty) list = list.filter((q) => q.difficulty === difficulty);
   if (cognitive) list = list.filter((q) => q.cognitive === cognitive);

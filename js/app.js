@@ -151,6 +151,8 @@ function bindBankSwitcher() {
       courseMap = getCourseMap();
       activeSession = null;
       buildFilterUI();
+      refreshBrowseCourseFilter();
+      document.getElementById("filter-course-options")?.dispatchEvent(new Event("change", { bubbles: true }));
       renderDashboard();
       bindPractice();
       document.getElementById("quiz-container")?.classList.add("hidden");
@@ -202,16 +204,59 @@ function renderDashboard() {
   }
 }
 
+function renderCourseCheckboxes(containerId, inputName) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = Object.entries(courseMap)
+    .map(
+      ([id, c]) => `
+    <label class="course-chip-check">
+      <input type="checkbox" name="${inputName}" value="${id}" />
+      <span>${c.name}</span>
+    </label>`
+    )
+    .join("");
+}
+
+function getSelectedCourses(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return [];
+  return [...container.querySelectorAll('input[type="checkbox"]:checked')].map((cb) => cb.value);
+}
+
+function bindCourseMultiActions() {
+  document.querySelectorAll("[data-course-action]").forEach((btn) => {
+    if (btn.dataset.bound) return;
+    btn.dataset.bound = "1";
+    btn.addEventListener("click", () => {
+      const targetId = btn.dataset.target;
+      const container = document.getElementById(targetId);
+      if (!container) return;
+      const checked = btn.dataset.courseAction === "all";
+      container.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
+        cb.checked = checked;
+      });
+      container.dispatchEvent(new Event("change", { bubbles: true }));
+    });
+  });
+}
+
 function buildFilterUI() {
   const el = document.getElementById("practice-filters");
-  const courses = Object.entries(courseMap)
-    .map(([id, c]) => `<option value="${id}">${c.name}</option>`)
-    .join("");
 
   el.innerHTML = `
     <h3>Practice Filters</h3>
     <div class="filter-grid">
-      <div><label>Course</label><select id="pf-course"><option value="">All courses</option>${courses}</select></div>
+      <div class="filter-span-full course-multi-filter">
+        <div class="course-multi-header">
+          <label>Courses <span class="course-multi-hint">(select one or more, or leave empty for all)</span></label>
+          <div class="course-multi-actions">
+            <button type="button" class="course-multi-btn" data-course-action="all" data-target="pf-course-options">All</button>
+            <button type="button" class="course-multi-btn" data-course-action="none" data-target="pf-course-options">Clear</button>
+          </div>
+        </div>
+        <div id="pf-course-options" class="course-multi-options" role="group" aria-label="Filter by course"></div>
+      </div>
       <div><label>Difficulty</label><select id="pf-difficulty"><option value="">All</option><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select></div>
       <div><label>Cognitive</label><select id="pf-cognitive"><option value="">All</option><option value="remember">Remember</option><option value="understand">Understand</option><option value="apply">Apply</option><option value="analyze">Analyze</option><option value="evaluate">Evaluate</option><option value="create">Create</option></select></div>
       <div><label>Count</label><select id="pf-count"><option value="10">10</option><option value="20" selected>20</option><option value="50">50</option></select></div>
@@ -219,12 +264,14 @@ function buildFilterUI() {
     <button class="btn btn-primary" id="start-practice-filtered">Start Session</button>
   `;
 
+  renderCourseCheckboxes("pf-course-options", "pf-course");
+  bindCourseMultiActions();
   document.getElementById("start-practice-filtered").addEventListener("click", startPracticeFromFilters);
 }
 
 function getPracticeFilters() {
   return {
-    course: document.getElementById("pf-course")?.value || "",
+    courses: getSelectedCourses("pf-course-options"),
     difficulty: document.getElementById("pf-difficulty")?.value || "",
     cognitive: document.getElementById("pf-cognitive")?.value || "",
   };
@@ -393,18 +440,17 @@ function renderReview(type) {
   });
 }
 
+function refreshBrowseCourseFilter() {
+  renderCourseCheckboxes("filter-course-options", "browse-course");
+  bindCourseMultiActions();
+}
+
 function bindBrowse() {
-  const courseSelect = document.getElementById("filter-course");
-  Object.entries(courseMap).forEach(([id, c]) => {
-    const o = document.createElement("option");
-    o.value = id;
-    o.textContent = c.name;
-    courseSelect.appendChild(o);
-  });
+  refreshBrowseCourseFilter();
 
   const run = () => {
     const qs = filterQuestions({
-      course: courseSelect.value,
+      courses: getSelectedCourses("filter-course-options"),
       difficulty: document.getElementById("filter-difficulty").value,
       cognitive: document.getElementById("filter-cognitive").value,
       search: document.getElementById("search-input").value,
@@ -438,10 +484,11 @@ function bindBrowse() {
     });
   };
 
-  ["search-input", "filter-course", "filter-difficulty", "filter-cognitive"].forEach((id) => {
+  ["search-input", "filter-difficulty", "filter-cognitive"].forEach((id) => {
     document.getElementById(id).addEventListener("input", run);
     document.getElementById(id).addEventListener("change", run);
   });
+  document.getElementById("filter-course-options")?.addEventListener("change", run);
   run();
 }
 

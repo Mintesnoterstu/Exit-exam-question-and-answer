@@ -170,7 +170,6 @@
         <div class="card">
           <div class="search-row">
             <input type="search" id="search-input" placeholder="Search questions…" aria-label="Search questions" />
-            <select id="filter-course" aria-label="Filter by course"><option value="">All courses</option></select>
             <select id="filter-difficulty" aria-label="Filter by difficulty">
               <option value="">All difficulties</option>
               <option value="easy">Easy</option>
@@ -186,6 +185,16 @@
               <option value="evaluate">Evaluate</option>
               <option value="create">Create</option>
             </select>
+          </div>
+          <div class="course-multi-filter" id="browse-course-filter">
+            <div class="course-multi-header">
+              <label>Courses <span class="course-multi-hint">(select one or more)</span></label>
+              <div class="course-multi-actions">
+                <button type="button" class="course-multi-btn" data-course-action="all" data-target="filter-course-options">All</button>
+                <button type="button" class="course-multi-btn" data-course-action="none" data-target="filter-course-options">Clear</button>
+              </div>
+            </div>
+            <div id="filter-course-options" class="course-multi-options" role="group" aria-label="Filter by course"></div>
           </div>
           <div id="browse-results" class="browse-results"></div>
         </div>
@@ -230,6 +239,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-    <script type="module" src="js/app.js?v=4"></script>
+    <script type="module" src="js/app.js?v=5"></script>
   </body>
 </html>
