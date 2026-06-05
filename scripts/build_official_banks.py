@@ -63,7 +63,10 @@ COURSE_BY_NUM = [
     (471, 500, "compiler-design", "Compiler Design"),
 ]
 
-from theoretical_explanations import build_theoretical_explanation(text: str) -> dict[int, dict]:
+from theoretical_explanations import build_theoretical_explanation
+
+
+def parse_exam_markdown(text: str) -> dict[int, dict]:
     """Parse **N. question** blocks with optional ``` code ``` and a./b./c./d. options."""
     text = text.replace("\r\n", "\n")
     blocks = re.split(r"\n(?=\*\*\d+\.\s)", text)
@@ -123,37 +126,15 @@ def lookup_meta(num: int, bank: str) -> tuple[str, str, str, str]:
     return theme_id, course_id, difficulty, chapter
 
 
-def build_explanation(num: int, question: str, correct: str, options: dict[str, str]) -> dict:
-    raise NotImplementedError("Use build_explanation with course_id via build_theoretical_explanation")
-
-
-def _old_build_explanation_removed(num: int, question: str, correct: str, options: dict[str, str]) -> dict:
-    qlow = question.lower()
-    correct_text = options.get(correct, "")
-    key = "default"
-    for kw, exp in EXPLANATIONS.items():
-        if kw in qlow or kw in correct_text.lower():
-            key = kw
-            break
-    correct_exp = EXPLANATIONS.get(key, EXPLANATIONS["default"])
-    correct_exp += f" Option {correct.upper()} ({correct_text}) is correct per the official answer key for this item."
-
-    incorrect = {}
-    for letter, text in options.items():
-        if letter != correct:
-            incorrect[letter.upper()] = (
-                f"Option {letter.upper()} ({text}) does not match the definition or scenario required by the question stem."
-            )
-
-    mistake = "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
-    if "normal form" in qlow or "normalization" in qlow:
-        mistake = "Confusing 1NF, 2NF, and 3NF partial vs transitive dependencies is a common exit exam trap."
-    elif "tcp" in qlow or "udp" in qlow:
-        mistake = "Mixing connection-oriented TCP with connectionless UDP characteristics is frequently tested."
-    elif "complexity" in qlow or "o(" in qlow:
-        mistake = "Confusing average-case and worst-case complexity leads to wrong algorithm choices."
-
-    return {"correct": correct_exp, "incorrect": incorrect, "commonMistake": mistake}
+def build_explanation(
+    num: int,
+    question: str,
+    correct: str,
+    options: dict[str, str],
+    course_id: str = "software-engineering",
+    code: dict | None = None,
+) -> dict:
+    return build_theoretical_explanation(num, course_id, question, correct, options, code)
 
 
 def build_bank(bank_id: str, answers: dict[int, str], parsed: dict[int, dict], fallback: dict[int, dict] | None = None) -> list[dict]:
@@ -182,7 +163,9 @@ def build_bank(bank_id: str, answers: dict[int, str], parsed: dict[int, dict], f
             "question": pdata["question"],
             "options": options_upper,
             "correct": correct_upper,
-            "explanation": build_explanation(num, pdata["question"], ans, pdata["options"]),
+            "explanation": build_explanation(
+                num, pdata["question"], ans, pdata["options"], course_id, pdata.get("code")
+            ),
         })
         if pdata.get("code"):
             questions[-1]["code"] = pdata["code"]
