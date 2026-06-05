@@ -184,6 +184,35 @@ svg {
   padding: 0.4rem 0;
 }
 
+.bank-switcher {
+  flex-shrink: 0;
+}
+
+.bank-select {
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  max-width: 9rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -660,6 +689,15 @@ svg {
   }
 }
 
+.question-number {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
 .question-text {
   font-size: clamp(1rem, 4vw, 1.05rem);
   font-weight: 500;
@@ -942,6 +980,13 @@ svg {
     min-height: var(--mobile-header-h);
     padding: 0.25rem 0;
     gap: 0.35rem;
+    flex-wrap: wrap;
+  }
+
+  .bank-select {
+    font-size: 0.72rem;
+    max-width: 7.5rem;
+    padding: 0.3rem 0.45rem;
   }
 
   .brand {

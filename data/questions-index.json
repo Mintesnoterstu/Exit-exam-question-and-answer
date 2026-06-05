@@ -1,0 +1,17 @@
+{
+  "banks": [
+    {
+      "id": "set1",
+      "file": "questions-set1.json",
+      "title": "Question Bank Set 1",
+      "count": 500
+    },
+    {
+      "id": "set2",
+      "file": "questions-set2.json",
+      "title": "Question Bank Set 2",
+      "count": 500
+    }
+  ],
+  "total": 1000
+}

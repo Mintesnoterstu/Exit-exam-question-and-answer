@@ -1,5 +1,8 @@
 import {
   loadData,
+  switchBank,
+  getActiveBankId,
+  getBankIndex,
   getMetadata,
   getAllQuestions,
   filterQuestions,
@@ -39,6 +42,7 @@ async function init() {
     bindReview();
     bindBrowse();
     bindQuickActions();
+    bindBankSwitcher();
     document.getElementById("app-loader").classList.add("hidden");
   } catch (err) {
     document.querySelector(".loader-card p").textContent =
@@ -135,13 +139,39 @@ function showView(name) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+function bindBankSwitcher() {
+  const select = document.getElementById("bank-select");
+  if (!select) return;
+  select.value = getActiveBankId();
+  select.addEventListener("change", async () => {
+    const loader = document.getElementById("app-loader");
+    loader?.classList.remove("hidden");
+    try {
+      await switchBank(select.value);
+      courseMap = getCourseMap();
+      activeSession = null;
+      buildFilterUI();
+      renderDashboard();
+      bindPractice();
+      document.getElementById("quiz-container")?.classList.add("hidden");
+      document.getElementById("practice-empty")?.classList.remove("hidden");
+      document.getElementById("mock-quiz")?.classList.add("hidden");
+    } finally {
+      loader?.classList.add("hidden");
+    }
+  });
+}
+
 function renderDashboard() {
   const meta = getMetadata();
   const questions = getAllQuestions();
   const progress = Storage.getProgress();
   const pct = progress.answered ? Math.round((progress.correct / progress.answered) * 100) : 0;
+  const bank = getBankIndex()?.banks?.find((b) => b.id === getActiveBankId());
+  const bankLabel = bank?.title || getActiveBankId();
 
   document.getElementById("dashboard-stats").innerHTML = `
+    <div class="stat-pill"><strong>${bankLabel}</strong><span>Active bank</span></div>
     <div class="stat-pill"><strong>${questions.length}</strong><span>Questions</span></div>
     <div class="stat-pill"><strong>${progress.answered}</strong><span>Answered</span></div>
     <div class="stat-pill"><strong>${pct}%</strong><span>Accuracy</span></div>
@@ -201,7 +231,10 @@ function getPracticeFilters() {
 }
 
 function bindPractice() {
-  document.getElementById("start-practice")?.addEventListener("click", startPracticeFromFilters);
+  const btn = document.getElementById("start-practice");
+  if (!btn || btn.dataset.bound) return;
+  btn.dataset.bound = "1";
+  btn.addEventListener("click", startPracticeFromFilters);
 }
 
 function startPracticeFromFilters() {

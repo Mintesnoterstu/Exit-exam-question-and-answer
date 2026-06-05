@@ -1,16 +1,44 @@
 let metadata = null;
 let questions = [];
+let bankIndex = null;
+let activeBankId = "set1";
 
-export async function loadData() {
-  const [metaRes, qRes] = await Promise.all([
+const BANK_STORAGE_KEY = "activeQuestionBank";
+
+export async function loadData(bankId = null) {
+  const [metaRes, indexRes] = await Promise.all([
     fetch("./data/metadata.json"),
-    fetch("./data/questions.json"),
+    fetch("./data/questions-index.json"),
   ]);
-  if (!metaRes.ok || !qRes.ok) throw new Error("Failed to load exam data");
+  if (!metaRes.ok || !indexRes.ok) throw new Error("Failed to load exam metadata");
+
   metadata = await metaRes.json();
+  bankIndex = await indexRes.json();
+
+  const saved = localStorage.getItem(BANK_STORAGE_KEY);
+  activeBankId = bankId || saved || bankIndex.banks[0]?.id || "set1";
+
+  const bank = bankIndex.banks.find((b) => b.id === activeBankId) || bankIndex.banks[0];
+  const qRes = await fetch(`./data/${bank.file}`);
+  if (!qRes.ok) throw new Error(`Failed to load ${bank.file}`);
+
   const qData = await qRes.json();
   questions = qData.questions || [];
-  return { metadata, questions };
+  localStorage.setItem(BANK_STORAGE_KEY, activeBankId);
+  return { metadata, questions, bankId: activeBankId, bank };
+}
+
+export async function switchBank(bankId) {
+  if (bankId === activeBankId) return { metadata, questions, bankId: activeBankId };
+  return loadData(bankId);
+}
+
+export function getActiveBankId() {
+  return activeBankId;
+}
+
+export function getBankIndex() {
+  return bankIndex;
 }
 
 export function getMetadata() {

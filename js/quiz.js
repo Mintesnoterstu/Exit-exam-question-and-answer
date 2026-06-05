@@ -119,6 +119,7 @@ export function renderQuizUI(container, session, handlers) {
           <button type="button" data-action="favorite" title="Favorite">${handlers.isFavorite(q.id) ? "⭐" : "☆"}</button>
         </div>
       </div>
+      <p class="question-number">Question ${q.number || session.index + 1}</p>
       <p class="question-text">${escapeHtml(q.question)}</p>
       <div class="options" role="group" aria-label="Answer options">
         ${["A", "B", "C", "D"]
