@@ -42,17 +42,33 @@ def extract_questions_block(text: str, start_marker: str, end_marker: str | None
 
 
 def clean_to_questions_only(block: str) -> str:
-    """Keep **N. question** and a./b./c./d. lines only."""
-    lines = []
+    """Keep **N. question**, fenced code blocks, and a./b./c./d. option lines."""
+    sections: list[str] = []
+    current: list[str] = []
+    in_code = False
+
     for line in block.splitlines():
-        s = line.strip()
-        if re.match(r"^\*\*\d+\.\s", s):
-            lines.append(s)
-        elif re.match(r"^[a-d]\.\s", s):
-            lines.append(s)
-        elif s.startswith("```"):
+        stripped = line.strip()
+        if re.match(r"^\*\*\d+\.\s", stripped):
+            if current:
+                sections.append("\n".join(current))
+            current = [stripped]
+            in_code = False
             continue
-    return "\n\n".join(lines) + "\n"
+        if re.match(r"^[a-d]\.\s", stripped):
+            in_code = False
+            current.append(stripped)
+            continue
+        if stripped.startswith("```"):
+            in_code = not in_code
+            current.append(line.rstrip())
+            continue
+        if in_code:
+            current.append(line.rstrip())
+
+    if current:
+        sections.append("\n".join(current))
+    return "\n\n".join(sections) + "\n"
 
 
 def main():

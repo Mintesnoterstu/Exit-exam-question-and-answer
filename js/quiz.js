@@ -120,7 +120,7 @@ export function renderQuizUI(container, session, handlers) {
         </div>
       </div>
       <p class="question-number">Question ${q.number || session.index + 1}</p>
-      <p class="question-text">${escapeHtml(q.question)}</p>
+      ${renderQuestionContent(q)}
       <div class="options" role="group" aria-label="Answer options">
         ${["A", "B", "C", "D"]
           .map((letter) => {
@@ -159,6 +159,14 @@ export function renderQuizUI(container, session, handlers) {
   });
 }
 
+function renderQuestionContent(q) {
+  const lang = q.code?.language || "code";
+  const codeHtml = q.code?.content
+    ? `<pre class="question-code" data-lang="${escapeHtml(lang)}"><code>${escapeHtml(q.code.content)}</code></pre>`
+    : "";
+  return `<p class="question-text">${escapeHtml(q.question)}</p>${codeHtml}`;
+}
+
 function renderExplanation(q) {
   const inc = q.explanation?.incorrect || {};
   const wrongHtml = Object.entries(inc)
@@ -186,4 +194,4 @@ function formatTime(sec) {
   return `${m}:${String(s).padStart(2, "0")}`;
 }
 
-export { formatTime, escapeHtml };
+export { formatTime, escapeHtml, renderQuestionContent };

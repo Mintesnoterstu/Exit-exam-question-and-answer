@@ -4349,6 +4349,10 @@
           "D": "Option D (Compilation error) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int x = 5, y = 2;\ncout << x / y;"
       }
     },
     {
@@ -4430,6 +4434,10 @@
           "D": "Option D (11 11) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "int x = 10;\nint y = x++;\nSystem.out.println(x + \" \" + y);"
       }
     },
     {
@@ -4484,6 +4492,10 @@
           "D": "Option D (20 10) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int a = 10, b = 20;\nint &ref = a;\nref = b;\ncout << a << \" \" << b;"
       }
     },
     {
@@ -4592,6 +4604,10 @@
           "D": "Option D (Runtime error) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "String s1 = \"Hello\";\nString s2 = \"Hello\";\nSystem.out.println(s1 == s2);"
       }
     },
     {
@@ -5051,6 +5067,10 @@
           "D": "Option D (5) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int fact(int n) {\n    if (n <= 1) return 1;\n    return n * fact(n-1);\n}"
       }
     },
     {
@@ -5213,6 +5233,10 @@
           "D": "Option D (4) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int arr[] = {1, 2, 3, 4, 5};\ncout << *(arr + 2);"
       }
     },
     {
@@ -5321,6 +5345,10 @@
           "D": "Option D ([A, B]) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "List<String> list = new ArrayList<>();\nlist.add(\"A\");\nlist.add(\"B\");\nlist.add(1, \"C\");\nSystem.out.println(list);"
       }
     },
     {
@@ -5456,6 +5484,10 @@
           "D": "Option D (Compilation error) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "int[] arr = {1, 2, 3};\nSystem.out.println(arr.length);"
       }
     },
     {
@@ -5510,6 +5542,10 @@
           "D": "Option D (1) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int a = 5;\nint b = 10;\nint c = a > b ? a : b;\ncout << c;"
       }
     },
     {
@@ -5591,6 +5627,10 @@
           "D": "Option D (13) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "int x = 5;\nSystem.out.println(x++ + ++x);"
       }
     },
     {
@@ -5753,6 +5793,10 @@
           "D": "Option D (Runtime error) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "int[] arr = new int[5];\nSystem.out.println(arr[0]);"
       }
     },
     {
@@ -5915,6 +5959,10 @@
           "D": "Option D (7 6 7) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int a = 5;\nint b = a++;\nint c = ++a;\ncout << a << \" \" << b << \" \" << c;"
       }
     },
     {
@@ -6050,6 +6098,10 @@
           "C": "Option C (10) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int x = 0;\nfor (int i = 0; i < 10; i++) {\n    x = x++;\n}\ncout << x;"
       }
     },
     {
@@ -6266,6 +6318,10 @@
           "D": "Option D (13) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int func(int n) {\n    if (n <= 1) return 1;\n    return func(n-1) + func(n-2);\n}"
       }
     },
     {
@@ -6617,6 +6673,10 @@
           "D": "Option D (20) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "public static void main(String[] args) {\n    int x = 0;\n    for (int i = 0; i < 5; i++) {\n        x += i;\n    }\n    System.out.println(x);\n}"
       }
     },
     {
@@ -6725,6 +6785,10 @@
           "D": "Option D (Compilation error) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "cpp",
+        "content": "int a = 5;\nint* p = &a;\nint** q = &p;\ncout << **q;"
       }
     },
     {
@@ -6806,6 +6870,10 @@
           "D": "Option D (Compilation error) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "List<Integer> list = Arrays.asList(1, 2, 3);\nlist.add(4);\nSystem.out.println(list);"
       }
     },
     {
@@ -6914,6 +6982,10 @@
           "D": "Option D (Compilation error) does not match the definition or scenario required by the question stem."
         },
         "commonMistake": "Students often confuse similar terms or pick a partially correct statement that fails the precise requirement of MoE-style items."
+      },
+      "code": {
+        "language": "java",
+        "content": "String s = \"Hello\";\ns.concat(\" World\");\nSystem.out.println(s);"
       }
     },
     {

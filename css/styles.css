@@ -701,10 +701,34 @@ svg {
 .question-text {
   font-size: clamp(1rem, 4vw, 1.05rem);
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: anywhere;
+}
+
+.question-code {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: var(--code-bg, #1e293b);
+  color: var(--code-text, #e2e8f0);
+  font-family: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  overflow-x: auto;
+  white-space: pre;
+  border: 1px solid var(--border);
+}
+
+.question-code code {
+  font-family: inherit;
+  white-space: pre;
+}
+
+[data-theme="light"] .question-code {
+  --code-bg: #0f172a;
+  --code-text: #f1f5f9;
 }
 
 .options {

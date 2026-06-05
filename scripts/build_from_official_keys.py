@@ -79,7 +79,7 @@ def build_set(bank_id: str, answers: dict[int, str], user_parsed: dict[int, dict
         theme_id, course_id, difficulty, chapter = lookup_meta(num, bank_id)
         exp = build_explanation(num, question, correct.lower(), {k.lower(): v for k, v in opts.items()})
 
-        questions.append({
+        item = {
             "id": f"{bank_id.upper()}-Q{num:03d}",
             "bankId": bank_id,
             "number": num,
@@ -92,7 +92,10 @@ def build_set(bank_id: str, answers: dict[int, str], user_parsed: dict[int, dict
             "options": opts,
             "correct": correct,
             "explanation": exp,
-        })
+        }
+        if pdata and pdata.get("code"):
+            item["code"] = pdata["code"]
+        questions.append(item)
     return questions
 
 

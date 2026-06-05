@@ -63,40 +63,8 @@ COURSE_BY_NUM = [
     (471, 500, "compiler-design", "Compiler Design"),
 ]
 
-EXPLANATIONS = {
-    "analysis": "The Analysis phase of the SDLC gathers and documents user requirements before design begins — a core software engineering concept from your course materials.",
-    "single responsibility": "The Single Responsibility Principle (SRP) states a software component should have only one reason to change — one job, one responsibility. This is the first SOLID principle taught in software engineering.",
-    "scrum": "Scrum is an Agile framework with sprints, daily stand-ups, and iterative delivery — unlike sequential models such as Waterfall.",
-    "html": "HTML (Hyper Text Markup Language) is the standard markup language for structuring web content, as covered in web programming materials.",
-    "select": "The SQL SELECT statement retrieves rows from database tables; INSERT adds rows, UPDATE modifies them, and DELETE removes them.",
-    "css": "CSS (Cascading Style Sheets) controls presentation, layout, and styling of HTML documents — it does not add interactivity (JavaScript) or structure content (HTML).",
-    "get": "HTTP GET requests retrieve representations of resources from a server and should be safe and idempotent in RESTful design.",
-    "acid": "ACID stands for Atomicity, Consistency, Isolation, and Durability — the four properties that guarantee reliable database transactions.",
-    "mongodb": "MongoDB is a document-oriented NoSQL database; MySQL, PostgreSQL, and Oracle are relational SQL databases.",
-    "primary key": "A primary key uniquely identifies each row in a relational table and enforces entity integrity in database design.",
-    "foreign key": "A foreign key references the primary key of another table, establishing referential integrity between relations.",
-    "normal form": "Normalization removes redundancy and update anomalies. 3NF eliminates transitive dependencies; BCNF strengthens 3NF when the key alone determines all attributes.",
-    "inner join": "INNER JOIN returns only rows with matching values in both tables; LEFT JOIN keeps all rows from the left table plus matches from the right.",
-    "tcp": "TCP is connection-oriented, provides reliable delivery with acknowledgments, and uses the three-way handshake (SYN, SYN-ACK, ACK).",
-    "udp": "UDP is connectionless and faster but does not guarantee delivery — suitable for streaming and DNS where speed matters more than reliability.",
-    "dijkstra": "Dijkstra's algorithm finds shortest paths from a single source in graphs with non-negative edge weights, typically O(E log V) with a binary heap.",
-    "stack": "A stack follows LIFO (Last In, First Out) — push/pop at one end. Used for recursion, undo operations, and DFS.",
-    "queue": "A queue follows FIFO (First In, First Out) — enqueue at rear, dequeue at front. Used for BFS and scheduling.",
-    "polymorphism": "Polymorphism allows one interface with multiple implementations — compile-time (overloading) and runtime (overriding) in OOP.",
-    "halting": "The halting problem asks whether a program will halt on a given input. It is undecidable — no general algorithm can solve it for all programs.",
-    "finite automaton": "Finite automata recognize regular languages — the lowest level in the Chomsky hierarchy, used in lexical analysis.",
-    "pushdown": "Pushdown automata have a stack and recognize context-free languages — used in syntax analysis of programming languages.",
-    "machine learning": "Machine learning is a subset of AI where systems learn patterns from data rather than being explicitly programmed for every rule.",
-    "overfitting": "Overfitting means the model memorizes training data but fails on unseen data — regularization and cross-validation help prevent it.",
-    "paging": "Paging divides physical memory into fixed-size frames and logical memory into pages, enabling virtual memory and reducing external fragmentation.",
-    "deadlock": "Deadlock requires mutual exclusion, hold-and-wait, no preemption, and circular wait. Prevention breaks one of these conditions.",
-    "default": "This answer aligns with the Ethiopian MoE CS exit exam blueprint and standard references in your course materials (software engineering, databases, networking, OS, AI, compilers).",
-}
-
-
-def parse_exam_markdown(text: str) -> dict[int, dict]:
-    """Parse **N. question** blocks with a./b./c./d. options."""
-    text = re.sub(r"```[\s\S]*?```", "", text)
+from theoretical_explanations import build_theoretical_explanation(text: str) -> dict[int, dict]:
+    """Parse **N. question** blocks with optional ``` code ``` and a./b./c./d. options."""
     text = text.replace("\r\n", "\n")
     blocks = re.split(r"\n(?=\*\*\d+\.\s)", text)
     out: dict[int, dict] = {}
@@ -106,15 +74,30 @@ def parse_exam_markdown(text: str) -> dict[int, dict]:
         if not m:
             continue
         num = int(m.group(1))
-        question = re.sub(r"\s+", " ", m.group(2).strip())
-        question = question.rstrip("*").strip()
+        body = m.group(2).strip().rstrip("*")
+
+        code_info = None
+        code_m = re.search(r"```(\w+)?\s*\n([\s\S]*?)```", body)
+        if code_m:
+            lang = (code_m.group(1) or "text").lower()
+            code_info = {"language": lang, "content": code_m.group(2).rstrip()}
+            body = (body[: code_m.start()] + body[code_m.end() :]).strip()
+
+        question = re.sub(r"\s+", " ", body).strip()
+        question = re.sub(r"\*+$", "", question).strip()
+
         opts = {}
         for letter in "abcd":
             om = re.search(rf"^{letter}\.\s*(.+)$", block, re.M)
             if om:
                 opts[letter] = om.group(1).strip()
-        if len(opts) == 4:
-            out[num] = {"question": question, "options": opts}
+        if len(opts) != 4:
+            continue
+
+        entry: dict = {"question": question, "options": opts}
+        if code_info:
+            entry["code"] = code_info
+        out[num] = entry
     return out
 
 
@@ -141,6 +124,10 @@ def lookup_meta(num: int, bank: str) -> tuple[str, str, str, str]:
 
 
 def build_explanation(num: int, question: str, correct: str, options: dict[str, str]) -> dict:
+    raise NotImplementedError("Use build_explanation with course_id via build_theoretical_explanation")
+
+
+def _old_build_explanation_removed(num: int, question: str, correct: str, options: dict[str, str]) -> dict:
     qlow = question.lower()
     correct_text = options.get(correct, "")
     key = "default"
@@ -197,6 +184,8 @@ def build_bank(bank_id: str, answers: dict[int, str], parsed: dict[int, dict], f
             "correct": correct_upper,
             "explanation": build_explanation(num, pdata["question"], ans, pdata["options"]),
         })
+        if pdata.get("code"):
+            questions[-1]["code"] = pdata["code"]
     return questions
 
 
