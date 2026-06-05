@@ -335,6 +335,238 @@ CONCEPT_THEORY: list[tuple[list[str], str]] = [
      "Intermediate representations (three-address code, SSA form) bridge source and target languages, enabling machine-independent optimization."),
     (["constant folding", "dead code elimination", "loop unrolling"],
      "Compiler optimizations: constant folding evaluates at compile time; DCE removes unreachable code; loop unrolling reduces branch overhead."),
+    # SQL and DBMS fundamentals
+    (["where clause", "filter records", "used to filter"],
+     "The WHERE clause implements relational selection (σ), filtering tuples that satisfy a Boolean predicate before GROUP BY aggregation or ORDER BY sorting."),
+    (["order by", "sort results", "used to sort"],
+     "ORDER BY specifies sort order on result columns after selection and projection — it does not filter rows (WHERE) or group them (GROUP BY)."),
+    (["group by", "filter records"],
+     "GROUP BY partitions rows for aggregate functions; it does not filter individual rows — that is the role of WHERE."),
+    (["what does sql stand", "sql stand for", "structured query language"],
+     "SQL (Structured Query Language) is the standard declarative language for defining, querying, and manipulating relational databases under the relational model."),
+    (["count the number of rows", "count()", "sql function is used to count"],
+     "COUNT() is the SQL aggregate function returning the number of rows (or non-NULL values) in a group — distinct from SUM(), which totals numeric columns."),
+    (["sum()", "sql function"],
+     "SUM() is an SQL aggregate computing the arithmetic total of numeric values in a column — not row cardinality."),
+    (["transaction in dbms", "logical unit of work"],
+     "A transaction is a logical unit of work satisfying ACID properties — a sequence of operations treated atomically as all-or-nothing."),
+    (["dirty read", "read committed", "isolation level prevents"],
+     "READ COMMITTED isolation prevents dirty reads by allowing reads only of committed data; READ UNCOMMITTED permits uncommitted writes to be visible."),
+    (["read uncommitted"],
+     "READ UNCOMMITTED is the weakest isolation level, allowing dirty reads — transactions may see uncommitted changes from others."),
+    (["serializable"],
+     "SERIALIZABLE is the strictest isolation level, equivalent to serial execution — preventing dirty reads, non-repeatable reads, and phantoms."),
+    (["varchar", "char(", "fixed-length", "variable-length"],
+     "CHAR(n) stores fixed-length padded strings; VARCHAR(n) stores variable-length strings up to n characters — a schema design distinction in relational storage."),
+    (["checkpoint in database", "checkpoint"],
+     "A checkpoint is a recovery mechanism that writes dirty pages and log records to stable storage, reducing redo work after a crash."),
+    (["delete a table", "drop table", "remove a table"],
+     "DROP TABLE is DDL that removes the table definition and data from the catalog; DELETE removes rows but preserves schema."),
+    (["create a database", "create database"],
+     "CREATE DATABASE is a DDL statement establishing a new database namespace with its own schema catalog."),
+    (["rollback command", "purpose of the `rollback`", "purpose of rollback"],
+     "ROLLBACK terminates a transaction and undoes all its uncommitted changes, restoring the database to the state before BEGIN."),
+    (["commit command", "purpose of the `commit`", "purpose of commit"],
+     "COMMIT makes all changes in the current transaction permanent and visible to other transactions — the durability boundary."),
+    (["data dictionary"],
+     "The data dictionary (system catalog) stores metadata — table definitions, constraints, users, and privileges — managed by the DBMS."),
+    (["current date", "curdate", "now()"],
+     "SQL date/time functions (CURDATE(), NOW(), CURRENT_TIMESTAMP) return the system date or timestamp for queries and defaults."),
+    (["delete` and `truncate", "difference between `delete` and `truncate"],
+     "DELETE is DML removing rows one-by-one with optional WHERE and trigger firing; TRUNCATE is DDL deallocating all rows quickly without row-level logging."),
+    (["add a column", "alter table"],
+     "ALTER TABLE ADD COLUMN modifies schema by introducing a new attribute with specified type and constraints."),
+    (["remove a column"],
+     "ALTER TABLE DROP COLUMN removes an attribute from a relation's schema definition."),
+    (["savepoint"],
+     "A savepoint is a named marker within a transaction enabling partial ROLLBACK to that point without aborting the entire transaction."),
+    (["transaction log"],
+     "The transaction log (redo/undo log) records every change for crash recovery and replication — the foundation of WAL protocols."),
+    (["stored function"],
+     "A stored function is a named procedural object in the DBMS that accepts parameters and returns a computed value, callable from SQL."),
+    (["purpose of the `union`", "union operator"],
+     "UNION combines result sets of compatible SELECT queries, eliminating duplicates (UNION ALL retains them) — set union in relational algebra."),
+    (["distributed database", "centralized database"],
+     "A distributed database spans multiple sites with data fragmentation or replication; a centralized database resides on a single server node."),
+    (["two-phase commit", "2pc"],
+     "Two-Phase Commit (2PC) is a distributed transaction protocol ensuring all nodes commit or abort atomically across a network."),
+    (["recovery technique uses a log", "undo incomplete"],
+     "Log-based recovery uses undo (rollback uncommitted) and redo (replay committed) operations guided by checkpoint and LSN ordering."),
+    # Programming languages
+    (["valid c++ identifier", "valid identifier"],
+     "C++ identifiers must start with a letter or underscore and contain alphanumeric characters — keywords and leading digits are invalid."),
+    (["cout <<", "output of `cout"],
+     "C++ stream insertion (cout <<) outputs expressions; boolean expressions print 1/0 or true/false depending on compiler settings; relational operators yield bool."),
+    (["define a class in java", "class in java"],
+     "The `class` keyword declares a reference type encapsulating fields and methods — the fundamental unit of OOP in Java."),
+    (["public static void main", "main method"],
+     "The main method is the JVM entry point: `public static void main(String[] args)` — public for JVM access, static for no instance, void return."),
+    (["java identifier"],
+     "Java identifiers follow Unicode letter rules, cannot be keywords, and are case-sensitive — distinct from C++ naming with some differences."),
+    (["pointer in c++", "nullptr"],
+     "C++ pointers hold addresses; nullptr is the typed null pointer constant replacing C's NULL macro for type safety."),
+    (["reference in c++", "alias"],
+     "A C++ reference is an alias binding to an existing object — must be initialized and cannot be rebound, unlike pointers."),
+    (["exception handling", "try catch", "throw"],
+     "Exception handling separates normal flow from error paths: try blocks, catch handlers, and throw propagate exceptions up the call stack."),
+    (["method overloading", "same name different parameters"],
+     "Method overloading resolves calls at compile time by signature (name + parameter types) — distinct from overriding via virtual dispatch."),
+    (["method overriding", "virtual", "override"],
+     "Method overriding replaces a base-class virtual method in a derived class — resolved at runtime through dynamic dispatch."),
+    (["interface in java", "implements"],
+     "A Java interface defines abstract method contracts; implementing classes must provide concrete definitions — enabling multiple inheritance of type."),
+    (["abstract class"],
+     "An abstract class may contain abstract methods (no body) and concrete methods — it cannot be instantiated directly."),
+    (["package in java"],
+     "Packages namespace classes and control visibility — the Java module system for organizing code and managing imports."),
+    (["string in java", "immutable"],
+     "Java String objects are immutable — concatenation creates new objects; the String pool caches literals for memory efficiency."),
+    (["arraylist", "linkedlist", "java collection"],
+     "ArrayList provides O(1) indexed access on dynamic arrays; LinkedList offers O(1) insertion at known nodes — different trade-offs in the Java Collections Framework."),
+    # Networking
+    (["email transmission", "send email", "protocol is used for email"],
+     "SMTP (Simple Mail Transfer Protocol) is the application-layer protocol for sending email between MTAs on port 25."),
+    (["what does ip stand", "ip stand for", "internet protocol"],
+     "IP (Internet Protocol) is the network-layer protocol providing logical addressing and best-effort datagram delivery across interconnected networks."),
+    (["private ip address", "192.168", "10.0", "172.16"],
+     "Private IP ranges (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) are non-routable on the public Internet per RFC 1918, used behind NAT."),
+    (["mac address", "physical address"],
+     "A MAC address is the 48-bit hardware identifier at the Data Link layer — flat structure unlike hierarchical IP addressing."),
+    (["subnet mask", "network address"],
+     "A subnet mask defines the network/host boundary in IPv4 addressing — combined with IP via bitwise AND to derive network prefix."),
+    (["nat", "network address translation"],
+     "NAT maps private internal addresses to public external addresses, conserving IPv4 space and providing basic perimeter isolation."),
+    (["ping", "icmp"],
+     "Ping uses ICMP Echo Request/Reply to test reachability and measure round-trip time — a network diagnostic at Layer 3."),
+    (["telnet", "remote login"],
+     "Telnet provides unencrypted remote terminal access on port 23 — superseded by SSH for secure administration."),
+    (["ssh", "secure shell"],
+     "SSH (Secure Shell) on port 22 provides encrypted remote login, command execution, and secure file transfer (SFTP/SCP)."),
+    (["ftp", "file transfer"],
+     "FTP (File Transfer Protocol) on port 21 transfers files using separate control and data channels — application-layer service."),
+    (["http method", "get request", "post request"],
+     "HTTP methods define semantics: GET retrieves resources (safe, idempotent), POST submits data for processing (non-idempotent)."),
+    (["cookie", "session management web"],
+     "HTTP cookies are client-side stored tokens enabling session state, personalization, and tracking across stateless HTTP requests."),
+    (["csrf", "cross-site request"],
+     "CSRF exploits authenticated sessions by tricking browsers into submitting forged requests — mitigated by tokens and SameSite cookies."),
+    (["man-in-the-middle", "mitm"],
+     "A MITM attack intercepts communication between parties — prevented by TLS certificate validation and mutual authentication."),
+    (["denial of service", "dos attack"],
+     "DoS attacks exhaust resources (bandwidth, CPU, connections) to deny service — DDoS distributes the attack across many sources."),
+    (["intrusion detection", "ids"],
+     "An IDS monitors network or host activity for suspicious patterns — signature-based or anomaly-based detection of attacks."),
+    (["vpn tunnel"],
+     "VPN tunneling encapsulates packets in encrypted tunnels over public networks, providing confidentiality and authenticated remote access."),
+    # AI / ML
+    (["what is artificial intelligence", "artificial intelligence?"],
+     "Artificial Intelligence is the field of creating systems that perform tasks requiring human-like intelligence — perception, reasoning, learning, and decision-making."),
+    (["classification problem", "example of a classification"],
+     "Classification is supervised learning predicting discrete class labels (spam/not spam, disease type) from labeled training features."),
+    (["difference between regression and classification", "regression and classification"],
+     "Regression predicts continuous numeric outputs; classification predicts discrete categorical labels — both are supervised but differ in output type."),
+    (["training set", "test set", "validation set"],
+     "Training data fits model parameters; validation tunes hyperparameters; test data provides unbiased generalization evaluation — the holdout principle."),
+    (["feature selection", "dimensionality"],
+     "Feature selection reduces input dimensionality by retaining informative attributes — combating curse of dimensionality and overfitting."),
+    (["gradient descent", "learning rate"],
+     "Gradient descent iteratively minimizes loss by moving opposite the gradient; learning rate controls step size — too large diverges, too small slows convergence."),
+    (["confusion matrix"],
+     "A confusion matrix tabulates TP, TN, FP, FN for classification — the basis for precision, recall, accuracy, and F1 metrics."),
+    (["expert system", "knowledge base", "inference engine"],
+     "Expert systems encode domain knowledge in rules (knowledge base) and apply inference engines for decision support — early AI paradigm."),
+    (["natural language processing", "nlp"],
+     "NLP applies computational techniques to human language — tokenization, parsing, semantics, and generation for translation, chatbots, and search."),
+    # Computer architecture and OS
+    (["purpose of the cpu", "what is the purpose of the cpu"],
+     "The CPU fetches, decodes, and executes instructions — coordinating ALU operations, registers, and control signals in the fetch-decode-execute cycle."),
+    (["difference between ram and rom", "ram and rom"],
+     "RAM is volatile read-write primary memory for active programs; ROM is non-volatile read-only storage for firmware and boot code."),
+    (["storage device", "secondary storage", "hard disk", "ssd"],
+     "Secondary storage (HDD, SSD, optical) provides non-volatile mass storage with slower access than primary RAM — the persistence layer."),
+    (["bus", "system bus", "address bus", "data bus"],
+     "Computer buses are shared communication pathways: address bus carries memory locations, data bus transfers words, control bus carries signals."),
+    (["interrupt"],
+     "Interrupts are hardware or software signals that suspend current execution to service urgent events — enabling I/O and multitasking."),
+    (["dma", "direct memory access"],
+     "DMA allows I/O devices to transfer data directly to memory without CPU byte-by-byte involvement — reducing processor overhead."),
+    (["context switch"],
+     "A context switch saves the current process state (registers, PC, page table) and loads another — the OS mechanism for multiprogramming."),
+    (["what is swapping", "swapping in memory"],
+     "Swapping moves entire process address spaces between main memory and disk when RAM is insufficient — distinct from paging individual pages."),
+    (["what is thrashing"],
+     "Thrashing occurs when a system spends more time paging than executing — caused by insufficient frames and high degree of multiprogramming."),
+    (["banker's algorithm"],
+     "Banker's algorithm is deadlock avoidance that simulates resource allocation to ensure the system remains in a safe state."),
+    (["producer consumer", "bounded buffer"],
+     "The producer-consumer problem models concurrent threads sharing a bounded buffer — solved with semaphores or monitors for synchronization."),
+    (["reader writer", "readers-writers"],
+     "The readers-writers problem allows multiple concurrent readers or exclusive writers — balancing consistency and concurrency."),
+    (["spooling"],
+     "Spooling (Simultaneous Peripheral Operations On-Line) buffers I/O jobs on disk — e.g., print spooler decouples process speed from device speed."),
+    # Compiler and complexity
+    (["symbol table", "purpose of a symbol table"],
+     "The symbol table stores identifiers (variables, functions, types) with attributes during compilation — supporting scope resolution and code generation."),
+    (["type of grammar", "regular grammar", "context-free grammar", "context-sensitive"],
+     "The Chomsky hierarchy classifies grammars: Type-3 regular, Type-2 context-free, Type-1 context-sensitive, Type-0 unrestricted — each with matching automaton power."),
+    (["reduction in complexity", "purpose of a reduction"],
+     "A reduction transforms problem A to problem B so that solving B solves A — the foundation of NP-completeness proofs."),
+    (["ambiguous grammar"],
+     "An ambiguous grammar generates some strings with multiple parse trees — undesirable in programming languages requiring unique syntax."),
+    (["ll(1)", "lr(1)", "parser generator"],
+     "LL(1) parsers are top-down with one token lookahead; LR(1) parsers are bottom-up shift-reduce — LR handles more grammars including left recursion."),
+    (["syntax directed translation", "sdt"],
+     "Syntax-directed translation attaches semantic actions to grammar productions — computing attributes during parse tree construction."),
+    (["code optimization", "peephole optimization"],
+     "Code optimization improves generated code for speed or size — local peephole rules, global data-flow analysis, and loop optimizations."),
+    (["register allocation"],
+     "Register allocation maps variables to finite CPU registers — graph coloring and spilling to memory when registers are exhausted."),
+    (["lexeme", "token type"],
+     "A lexeme is the character sequence matched by a pattern; the lexer classifies it into a token type (keyword, identifier, literal)."),
+    (["follow set", "first set"],
+     "FIRST and FOLLOW sets guide predictive parsing — FIRST(α) is terminals starting derivations of α; FOLLOW(A) is terminals after nonterminal A."),
+    (["moore machine", "mealy machine"],
+     "Moore machines output on states; Mealy machines output on transitions — both are finite-state transducers extending acceptors."),
+    (["recursively enumerable", "recognizable"],
+     "Recursively enumerable languages are recognized by Turing machines that may not halt on non-members — the most general computable class."),
+    (["decidable", "decision problem"],
+     "A decision problem is decidable if a Turing machine always halts with yes/no — unlike semi-decidable (recognizable only) problems."),
+    (["space complexity", "pspace"],
+     "Space complexity measures memory as a function of input size; PSPACE is the class of problems solvable in polynomial space."),
+    (["big-o", "asymptotic notation", "theta notation"],
+     "Asymptotic notation (O, Ω, Θ) describes growth rates ignoring constants — Big-O is upper bound, Omega is lower, Theta is tight bound."),
+    # Software engineering extras
+    (["coupling", "cohesion"],
+     "Coupling measures inter-module dependency (lower is better); cohesion measures intra-module focus (higher is better) — modular design principles."),
+    (["functional requirement", "non-functional"],
+     "Functional requirements specify system behaviors; non-functional requirements specify quality attributes like performance, security, and usability."),
+    (["gantt chart", "pert chart"],
+     "Gantt charts show task timelines on a calendar; PERT charts show task dependencies and critical paths in project scheduling."),
+    (["risk management", "risk mitigation"],
+     "Risk management identifies, analyzes, and mitigates project threats — probability-impact matrices and contingency planning."),
+    (["use case diagram", "uml"],
+     "Use case diagrams model actor-system interactions in UML — capturing functional requirements from an external user perspective."),
+    (["class diagram", "sequence diagram"],
+     "Class diagrams show static structure (classes, associations); sequence diagrams show dynamic message passing over time in UML."),
+    (["prototype model", "evolutionary"],
+     "Prototyping builds partial systems for user feedback before full development — evolutionary when prototypes become the product."),
+    (["incremental model"],
+     "The incremental model delivers software in functional slices, each adding features — combining elements of waterfall and iterative development."),
+    (["cmmi", "capability maturity"],
+     "CMMI defines process maturity levels (Initial through Optimizing) for organizational software process improvement."),
+    # Web programming extras
+    (["console.log", "javascript method", "write to the console"],
+     "console.log() is the JavaScript standard API for writing diagnostic messages to the browser or Node.js developer console — distinct from document.write() (DOM output) or alert() (modal dialogs)."),
+    (["ajax", "asynchronous"],
+     "AJAX enables asynchronous HTTP requests from JavaScript without full page reload — the foundation of dynamic web applications."),
+    (["xml", "extensible markup"],
+     "XML is a markup language for structured hierarchical data with custom tags — used in configuration, SOAP, and data interchange."),
+    (["session in php", "php session"],
+     "PHP sessions store server-side user state keyed by session ID in cookies — enabling login persistence across HTTP requests."),
+    (["get vs post", "get and post"],
+     "GET appends parameters to URL (visible, cacheable, length-limited); POST sends data in request body (hidden, larger payloads)."),
+    (["responsive design", "media query"],
+     "Responsive web design adapts layout to screen size using fluid grids, flexible images, and CSS media queries."),
 ]
 
 # What common distractor options theoretically represent (for wrong-answer explanations)
@@ -454,6 +686,46 @@ OPTION_CONCEPT_HINTS: dict[str, str] = {
     "443": "port 443, the well-known port for HTTPS",
     "3306": "port 3306, the default port for MySQL",
     "8080": "port 8080, commonly used as an alternate HTTP port",
+    "where": "the SQL WHERE clause for row-level filtering via predicates",
+    "having": "the SQL HAVING clause for filtering groups after aggregation",
+    "count()": "COUNT(), the SQL aggregate for row cardinality",
+    "sum()": "SUM(), the SQL aggregate for numeric totals",
+    "avg()": "AVG(), the SQL aggregate for arithmetic mean",
+    "max()": "MAX(), the SQL aggregate returning the maximum value",
+    "min()": "MIN(), the SQL aggregate returning the minimum value",
+    "truncate": "TRUNCATE, DDL that removes all rows without row-level DELETE logging",
+    "create table": "CREATE TABLE, DDL defining a new relation schema",
+    "create database": "CREATE DATABASE, DDL establishing a new database namespace",
+    "read committed": "READ COMMITTED isolation preventing dirty reads",
+    "read uncommitted": "READ UNCOMMITTED, the weakest isolation allowing dirty reads",
+    "repeatable read": "REPEATABLE READ isolation preventing non-repeatable reads within a transaction",
+    "serializable": "SERIALIZABLE, the strictest transaction isolation level",
+    "structured query language": "Structured Query Language — the standard relational query language",
+    "hypertext markup language": "HTML — markup for web documents, not a database query language",
+    "simple mail transfer": "SMTP-related naming — not the SQL expansion",
+    "hypertext preprocessor": "PHP — a server-side scripting language, not SQL",
+    "logical unit of work": "a transaction — an ACID logical unit of database operations",
+    "single sql statement": "a single statement — not the full transactional unit defined by ACID",
+    "dirty read": "reading uncommitted data from another transaction",
+    "non-repeatable read": "reading different values for the same row within one transaction",
+    "phantom read": "new rows appearing in a repeated range query within a transaction",
+    "hard disk": "magnetic secondary storage with rotating platters",
+    "ssd": "solid-state storage using flash memory — faster than HDD",
+    "optical disk": "optical media like CD/DVD for storage",
+    "flash memory": "non-volatile EEPROM-based storage used in SSDs and USB drives",
+    "register file": "CPU registers — fastest storage in the memory hierarchy",
+    "magnetic tape": "sequential archival storage — not primary or secondary random-access memory",
+    "classification": "predicting discrete class labels in supervised learning",
+    "regression": "predicting continuous numeric values in supervised learning",
+    "clustering": "grouping unlabeled data in unsupervised learning",
+    "regular grammar": "Type-3 grammar generating regular languages",
+    "context-free grammar": "Type-2 grammar generating context-free languages",
+    "context-sensitive grammar": "Type-1 grammar with length-non-decreasing productions",
+    "unrestricted grammar": "Type-0 grammar with full Turing-machine generative power",
+    "document.write()": "document.write() — writes HTML directly to the document stream during page load, not the developer console",
+    "console.log()": "console.log() — the standard API for developer console diagnostic output",
+    "window.alert()": "window.alert() — displays a modal dialog box, blocking further interaction until dismissed",
+    "print()": "print() — not a native JavaScript function; JavaScript uses console.log() for console output",
 }
 
 CODE_OUTPUT_THEORY = {
@@ -467,12 +739,29 @@ def _normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text.lower().strip())
 
 
-def detect_topic_theory(question: str, correct_text: str) -> str | None:
-    combined = _normalize(question + " " + correct_text)
+def _keyword_matches(keyword: str, text: str) -> bool:
+    """Match keywords without false positives (e.g. 'rip' inside 'print')."""
+    if len(keyword) <= 4:
+        pattern = rf"(?:^|[^a-z0-9]){re.escape(keyword)}(?:[^a-z0-9]|$)"
+        return bool(re.search(pattern, text))
+    return keyword in text
+
+
+def _first_sentence(text: str) -> str:
+    match = re.search(r"^.+?\.(?:\s+|$)", text)
+    if match:
+        return match.group(0).strip()
+    idx = text.find(".")
+    return text[: idx + 1] if idx != -1 else text
+
+
+def detect_topic_theory(question: str, correct_text: str = "") -> str | None:
+    combined = _normalize(f"{question} {correct_text}")
+    question_only = _normalize(question)
     best: tuple[int, str] | None = None
     for keywords, theory in CONCEPT_THEORY:
         for kw in keywords:
-            if kw in combined:
+            if _keyword_matches(kw, combined) or _keyword_matches(kw, question_only):
                 if best is None or len(kw) > best[0]:
                     best = (len(kw), theory)
     return best[1] if best else None
@@ -480,16 +769,16 @@ def detect_topic_theory(question: str, correct_text: str) -> str | None:
 
 def theory_for_option(option_text: str, course_id: str) -> str:
     low = _normalize(option_text)
+    matched = detect_topic_theory(option_text, option_text)
+    if matched:
+        return _first_sentence(matched).rstrip(".")
     for hint_key in sorted(OPTION_CONCEPT_HINTS, key=len, reverse=True):
         if hint_key in low or low == hint_key:
             return OPTION_CONCEPT_HINTS[hint_key]
-    for keywords, theory in CONCEPT_THEORY:
-        if any(kw in low for kw in keywords):
-            return theory
     course = COURSE_THEORY.get(course_id, "Computer Science")
     if len(low) <= 80:
-        return f"the CS concept or term '{option_text}' as defined in {course} literature"
-    return "a different theoretical interpretation than the one required by the question"
+        return f"'{option_text}' — a term from {course} with a distinct definition from the correct answer"
+    return f"a related {course} concept that does not satisfy the question's theoretical criterion"
 
 
 def _infer_correct_theory(question: str, correct_text: str, course_name: str, qlow: str) -> str:
@@ -552,11 +841,13 @@ def _infer_correct_theory(question: str, correct_text: str, course_name: str, ql
     if "what is a" in qlow or "what is an" in qlow or "what is the" in qlow:
         return (
             f"'{correct_text}' is the canonical theoretical definition of the concept named in the question "
-            f"within {course_name}."
+            f"within {course_name} — the formal property, mechanism, or model that textbooks and the MoE "
+            f"curriculum use to describe this topic."
         )
     return (
         f"In {course_name}, '{correct_text}' expresses the formal definition, property, "
-        f"or theoretical model that the question is assessing."
+        f"or theoretical model that the question is assessing — the concept tested matches "
+        f"established theory rather than a related but distinct idea."
     )
 
 
@@ -585,16 +876,111 @@ QUESTION_WRONG_THEORY: list[tuple[list[str], dict[str, str]]] = [
 ]
 
 
-def _explain_wrong_option(question: str, wrong_text: str, course_id: str) -> str:
+def _explain_wrong_option(
+    question: str,
+    wrong_text: str,
+    correct_text: str,
+    course_id: str,
+    topic_theory: str | None,
+) -> str:
     qlow = _normalize(question)
     wrong_low = _normalize(wrong_text)
+
     for keywords, wrong_map in QUESTION_WRONG_THEORY:
         if any(kw in qlow for kw in keywords):
             for pattern, explanation in wrong_map.items():
                 if pattern in wrong_low:
                     return explanation
-    opt_theory = theory_for_option(wrong_text, course_id)
-    return f"Theoretically, this describes {opt_theory}, which is a different concept from the one the question defines."
+
+    if topic_theory is None:
+        topic_theory = detect_topic_theory(question, correct_text)
+
+    wrong_theory = detect_topic_theory(wrong_text, wrong_text)
+    wrong_desc = theory_for_option(wrong_text, course_id)
+    correct_theory = detect_topic_theory(correct_text, correct_text)
+    focus = _question_focus(qlow)
+
+    if "output of" in qlow and ("code" in qlow or "following" in qlow):
+        return (
+            f"By the language's operator precedence, type rules, and control-flow semantics, "
+            f"'{wrong_text}' is not the value produced when the given program fragment is evaluated."
+        )
+
+    if (
+        "extension" in wrong_low
+        and "ram" in wrong_low
+        and "disk" in wrong_low
+        and topic_theory
+        and "virtual memory" in _normalize(topic_theory)
+        and wrong_low.find("ram") < wrong_low.find("disk")
+    ):
+        return (
+            "This reverses the memory hierarchy: virtual memory theory defines disk as backing store "
+            "for RAM (primary memory), not RAM extending disk."
+        )
+
+    if topic_theory and wrong_theory and wrong_theory != topic_theory:
+        return f"{_first_sentence(wrong_theory)} {_first_sentence(topic_theory)}"
+
+    if topic_theory:
+        topic_sent = _first_sentence(topic_theory)
+        if wrong_desc.startswith("'"):
+            return f"{wrong_desc}. {topic_sent}"
+        return f"'{wrong_text}' describes {wrong_desc}. {topic_sent}"
+
+    if correct_theory and wrong_theory and correct_theory != wrong_theory:
+        return (
+            f"{_first_sentence(wrong_theory)} "
+            f"The correct answer follows {_first_sentence(correct_theory).lower()}"
+        )
+
+    if correct_theory:
+        return (
+            f"'{wrong_text}' describes {wrong_desc}, whereas the correct choice reflects "
+            f"{_first_sentence(correct_theory).lower()}"
+        )
+
+    if "stand for" in qlow or "stands for" in qlow:
+        return (
+            f"'{wrong_text}' is not the standard acronym expansion for the term in the question — "
+            f"it names a different concept in {COURSE_THEORY.get(course_id, 'Computer Science')}."
+        )
+    if "difference between" in qlow:
+        return (
+            f"'{wrong_text}' states a property that does not capture the theoretical distinction "
+            f"between the compared concepts in {focus}."
+        )
+    if "which protocol" in qlow or "email" in qlow:
+        return (
+            f"'{wrong_text}' names a protocol with a different application-layer role — "
+            f"not the service defined for the communication task described."
+        )
+    if "which sql" in qlow or "sql clause" in qlow or "sql function" in qlow or "sql statement" in qlow:
+        return (
+            f"'{wrong_text}' refers to a different SQL operator — relational algebra assigns "
+            f"distinct roles to selection (WHERE), projection, aggregation, and sorting."
+        )
+    if "which phase" in qlow or "sdlc" in qlow:
+        return (
+            f"'{wrong_text}' names a different SDLC phase whose deliverables and activities "
+            f"do not match the process step described in the question."
+        )
+    if "which data structure" in qlow or "which structure" in qlow:
+        return (
+            f"'{wrong_text}' is a different abstract data type whose access semantics "
+            f"(LIFO, FIFO, indexed, etc.) do not fit the operations required."
+        )
+    if "which algorithm" in qlow:
+        return (
+            f"'{wrong_text}' is a different algorithm whose prerequisites, complexity, "
+            f"or problem domain do not match the constraints stated."
+        )
+
+    return (
+        f"'{wrong_text}' corresponds to {wrong_desc}. "
+        f"In {focus}, this option does not satisfy the definition, mechanism, or property "
+        f"the question asks you to identify."
+    )
 
 
 def _question_focus(qlow: str) -> str:
@@ -649,7 +1035,9 @@ def build_theoretical_explanation(
     for letter, text in options.items():
         if letter.upper() == correct_upper:
             continue
-        incorrect[letter.upper()] = _explain_wrong_option(question, text, course_id)
+        incorrect[letter.upper()] = _explain_wrong_option(
+            question, text, correct_text, course_id, topic_theory
+        )
 
     mistake = _common_mistake(qlow, course_id)
     return {"correct": correct_exp, "incorrect": incorrect, "commonMistake": mistake}
